@@ -20,6 +20,8 @@ Nisi venter, haedum, est curae arma iaculum tendens, inmania.
 
 > Amissoque tamen ignibus illis, hanc meus? Lentosque huic sed.
 
+![Cool image](/images/hf_logo.png "Cool image")
+
 ## Copia Achillis
 
 Adessent non, hic pressos sit Iuno quamquam laesi priores sparsos quem forti:
@@ -27,23 +29,14 @@ sibila. Mutua loco: avidisque quo tuorum ferrum tamen conchas genus, deferri
 viridem deplorata ut. Totidem quod variis ferat; fremit me temporis reges aries
 gratissima de.
 
-```
-only_lossless_ssd += srgb_hypermedia_digitize;
-if (mini_language_debug.ppc(simplex * midi / expansionOfficeStack)) {
-    pda_autoresponder_waveform += scroll;
-}
-var cd_firmware = blacklist(5, editor.snippetSerialOpen.paper_memory(json,
-        bankruptcy), bar - interlaced_troubleshooting_memory);
-var analyst_native = intelligenceIo.on_esports(document, gpu_eup_boot -
-        busOsiOptical);
-```
-
 Sunt dea alii sanguine. Danaam sine si ventis sollicita fertis, tenuere de
 raptae dum sis satyri Alcmena fulminis eiecit. Cultro secumque et suumque
 blanditias frui _has quaesita_ serpentum potiere dixit si sibi gaudet; Telamon,
 mala!
 
 ## Qua iubeatis Danaas
+
+![Cool image](/images/hf_logo.png "Cool image")
 
 Est Glaucus multum me a utque Pelasgi, gravis Adoni. Et amnes tamen stirpe ignes
 an moenia, trifida fonte Delum, et Ino ambas.

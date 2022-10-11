@@ -5,6 +5,7 @@ import Head from "next/head";
 import { CMS_NAME } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
+import PostBody from "../../components/post-body";
 
 type Props = {
   post: PostType;
@@ -17,7 +18,7 @@ export default function Post({ post, morePosts, preview }: Props) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
-  return <div dangerouslySetInnerHTML={{ __html: post.content }} />;
+  return <PostBody content={post.content} />;
 }
 
 type Params = {
