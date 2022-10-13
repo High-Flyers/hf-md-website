@@ -8,11 +8,11 @@ type replacementImg = {
 
 export default async function markdownToHtml(markdown: string) {
   const result = await remark().use(html).process(markdown);
-  const regex = /<img.+?(?=>)/gm;
-  const resultStr = result.toString();
+  const regex = /<img.+?(?=>)>/gm;
+  let resultStr = result.toString();
   const matches = resultStr.match(regex);
   const replacements: replacementImg[] = [];
-  console.log(matches);
+
   matches?.forEach((mReg) => {
     const m = mReg.toString();
     const src = m
@@ -29,9 +29,15 @@ export default async function markdownToHtml(markdown: string) {
       .replace('title="', "");
 
     const nextImg = `<Image src="${src}" alt="${alt}" />`;
-
-    console.log(nextImg);
+    replacements.push({
+      prev: m,
+      next: nextImg,
+    });
   });
 
-  return result.toString();
+  replacements.forEach((rep) => {
+    resultStr = resultStr.replace(rep.prev, rep.next);
+  });
+
+  return resultStr;
 }

@@ -20,7 +20,7 @@ Nisi venter, haedum, est curae arma iaculum tendens, inmania.
 
 > Amissoque tamen ignibus illis, hanc meus? Lentosque huic sed.
 
-![Cool image](/images/hf_logo.png "Cool image")
+![Cool image](/lorem_ipsum/droniada2022.jpg "Cool image")
 
 ## Copia Achillis
 
@@ -36,7 +36,7 @@ mala!
 
 ## Qua iubeatis Danaas
 
-![Cool image](/images/hf_logo.png "Cool image")
+![Cool image](/hf_logo.png "Cool image")
 
 Est Glaucus multum me a utque Pelasgi, gravis Adoni. Et amnes tamen stirpe ignes
 an moenia, trifida fonte Delum, et Ino ambas.
