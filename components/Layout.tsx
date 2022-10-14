@@ -12,7 +12,9 @@ export const Layout: React.FC<Props> = ({ children }) => {
           <Link href="/">
             <div className="flex items-center">
               <img src="/hf_logo.png" className="max-h-14 p-1 flex-none" />
-              <h1 className="font-bold text-xl ">High Flyers</h1>
+              <h1 className="hidden md:block font-bold text-xl ">
+                High Flyers
+              </h1>
             </div>
           </Link>
         </div>
