@@ -45,3 +45,7 @@ export function getAllPosts(fields: string[] = []) {
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;
 }
+
+export function getNPosts(n: number = 5, fields: string[] = []) {
+  return getAllPosts(fields).slice(0, n);
+}
