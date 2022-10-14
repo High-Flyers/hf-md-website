@@ -28,7 +28,7 @@ export default async function markdownToHtml(markdown: string) {
       ?.toString()
       .replace('title="', "");
 
-    const nextImg = `<Image src="${src}" alt="${alt}" />`;
+    const nextImg = `<Image src="${src}" alt="${alt}"/>`;
     replacements.push({
       prev: m,
       next: nextImg,

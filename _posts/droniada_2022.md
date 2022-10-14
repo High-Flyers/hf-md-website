@@ -20,4 +20,6 @@ Naszym zadaniem było stworzenie autonomicznego systemu zdolnego do oświetlenia
 
 Podziękowania i gromkie brawa należą się dla całego zespołu za poświęcony czas i wszelkie wyrzeczenia. Z tego miejsca chcieliśmy również podziękować za wsparcie Politechnice Śląskiej i naszym sponsorom, firmą: DRON.edu.pl i Flytronic S.A.
 
+![Cool image](/lorem_ipsum/droniada2022.jpg "Cool image")
+
 Zaczynamy przygotowania do kolejnej edycji Droniady i widzimy się znowu za rok!
