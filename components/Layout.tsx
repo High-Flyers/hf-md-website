@@ -7,7 +7,7 @@ type Props = {
 export const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-red-600 py-2 sticky top-0 z-10">
+      <header className="bg-bg-beubl py-2 sticky top-0 z-10">
         <div className="container mx-auto flex ">
           <Link href="/">
             <div className="flex items-center">
@@ -17,10 +17,10 @@ export const Layout: React.FC<Props> = ({ children }) => {
           </Link>
         </div>
       </header>
-      <main className="container mx-auto flex-1 p-2 bg-slate-900 text-white">
+      <main className="container mx-auto flex-1 p-2 bg-bg-forga text-white">
         {children}
       </main>
-      <footer className="bg-fuchsia-100 py-4">
+      <footer className="bg-bg-popstar py-4">
         <div className="container mx-auto flex justify-center">
           &copy; 2022 High Flyers
         </div>

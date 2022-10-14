@@ -2,7 +2,7 @@
 title: "Droniada 2022"
 excerpt: "Nasz zespół osiągnął kolejny sukces!!!"
 coverImage: "/droniada_2022/droniada2022.jpg"
-date: "2020-03-16T05:35:07.322Z"
+date: "2022-03-16T05:35:07.322Z"
 author:
   name: Paweł Piórkowski
   picture: "/authors/PawelPiorkowski.jpg"

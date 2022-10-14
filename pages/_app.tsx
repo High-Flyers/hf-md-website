@@ -6,7 +6,7 @@ import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className="bg-bg-eleblu">
       <Head>
         <title>HighFlyers</title>
         <meta name="HighFlyers" content="Scientific Organization High Flyers" />
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </>
+    </div>
   );
 }
 
