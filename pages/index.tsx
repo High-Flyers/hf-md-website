@@ -20,7 +20,7 @@ const Index: NextPage<Props> = ({ posts }: Props) => {
 export default Index;
 
 export const getStaticProps = async () => {
-  const posts = getNPosts(3, [
+  const posts = getNPosts(4, [
     "title",
     "date",
     "slug",

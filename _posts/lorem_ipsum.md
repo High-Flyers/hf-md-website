@@ -20,7 +20,7 @@ Nisi venter, haedum, est curae arma iaculum tendens, inmania.
 
 > Amissoque tamen ignibus illis, hanc meus? Lentosque huic sed.
 
-![Cool image](/lorem_ipsum/droniada2022.jpg "Cool image")
+![Cool image](/posts/lorem_ipsum/droniada2022.jpg "Cool image")
 
 ## Copia Achillis
 
