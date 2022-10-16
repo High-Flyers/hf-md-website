@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Sponsors from "./sponsors";
 
 type Props = {
   children: JSX.Element;
@@ -21,6 +22,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
       </header>
       <main className="container mx-auto flex-1 p-2 bg-bg-forga text-white">
         {children}
+        <Sponsors />
       </main>
       <footer className="bg-bg-popstar py-4">
         <div className="container mx-auto flex justify-center">
