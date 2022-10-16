@@ -15,17 +15,17 @@ export const Sponsors = ({ }: Props) => {
         <SponsorImage
           src="/sponsors/logo-dron.png"
           alt="DronEdu"
-          link="https://dron.edu.pl/"
+          link="https://dron.edu.pl"
         />
         <SponsorImage
           src="/sponsors/botland.png"
           alt="Botland"
-          link="https://botland.com.pl/"
+          link="https://botland.com.pl"
         />
         <SponsorImage
           src="/sponsors/uzss.png"
           alt="UZSS"
-          link="https://www.polsl.pl/ribek/samorzad-studencki/"
+          link="https://www.polsl.pl/ribek/samorzad-studencki"
         />
       </div>
     </div>
