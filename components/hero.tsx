@@ -1,6 +1,6 @@
 type Props = {};
 
-export const Hero = ({ }: Props) => {
+export const Hero = ({}: Props) => {
   return (
     <div>
       <img
@@ -22,7 +22,7 @@ export const Hero = ({ }: Props) => {
           </p>
         </div>
       </div>
-      <div className="flex gap-16 justify-center content-center mb-16 md:mb-18">
+      <div className="flex gap-16 content-center sm:justify-center md:justify-start md:ml-8 mb-16 md:mb-18">
         <a
           className="w-14"
           href="https://www.instagram.com/highflyers.polsl"
