@@ -3,6 +3,7 @@ import Hero from "../components/hero";
 import { getNPosts } from "../lib/api";
 import Post from "../interfaces/post";
 import MoreStories from "../components/more-stories";
+import AllStories from "../components/all-stories";
 
 type Props = {
   posts: Post[];
@@ -13,6 +14,7 @@ const Index: NextPage<Props> = ({ posts }: Props) => {
     <div className="">
       <Hero />
       <MoreStories posts={posts} />
+      <AllStories />
     </div>
   );
 };
@@ -20,7 +22,7 @@ const Index: NextPage<Props> = ({ posts }: Props) => {
 export default Index;
 
 export const getStaticProps = async () => {
-  const posts = getNPosts(4, [
+  const posts = getNPosts(2, [
     "title",
     "date",
     "slug",

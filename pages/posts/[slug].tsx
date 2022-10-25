@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import Head from "next/head";
-import { CMS_NAME } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
 import PostBody from "../../components/post-body";
@@ -15,7 +14,7 @@ type Props = {
   preview?: boolean;
 };
 
-export default function Post({ post, morePosts }: Props) {
+export default function Post({ post }: Props) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;

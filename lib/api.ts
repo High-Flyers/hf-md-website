@@ -46,6 +46,14 @@ export function getAllPosts(fields: string[] = []) {
   return posts;
 }
 
-export function getNPosts(n: number = 5, fields: string[] = []) {
+export function getNPosts(n: number = 2, fields: string[] = []) {
   return getAllPosts(fields).slice(0, n);
+}
+
+export function getAtoBPosts(
+  a: number = 0,
+  b: number = 8,
+  fields: string[] = []
+) {
+  return getAllPosts(fields).slice(a, b);
 }
