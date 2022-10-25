@@ -45,7 +45,6 @@ export const getStaticProps = async ({ params }: Params) => {
   );
 
   const allPages = Math.ceil(getNumOfPosts() / POSTS_PER_PAGE);
-  console.log(posts);
 
   return {
     props: { posts, pageNo, allPages },
@@ -63,8 +62,6 @@ export async function getStaticPaths() {
     });
     cnt++;
   }
-
-  console.log(paths);
 
   return {
     paths,
