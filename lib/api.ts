@@ -57,3 +57,7 @@ export function getAtoBPosts(
 ) {
   return getAllPosts(fields).slice(a, b);
 }
+
+export const getNumOfPosts = () => {
+  return getPostSlugs().length;
+};
