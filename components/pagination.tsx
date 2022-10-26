@@ -16,8 +16,12 @@ const Pagination = ({ allPages, currentPage }: Props) => {
 
   const slack = SIZE - (end - begin);
   if (slack > 0) {
-    if (begin == 0 && end + slack < allPages) end += slack;
-    if (end == allPages && begin - slack >= 0) begin -= slack;
+    if (begin == 0)
+      if (end + slack < allPages) end += slack;
+      else end = allPages;
+    if (end == allPages)
+      if (begin - slack > 0) begin -= slack;
+      else begin = 0;
   }
 
   const before = [];
