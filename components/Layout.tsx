@@ -9,7 +9,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="container mx-auto flex-1 p-2 bg-bg-forga text-white">
+      <main className="container mx-auto flex-1 p-4 bg-bg-forga text-white">
         {children}
         <Sponsors />
       </main>
