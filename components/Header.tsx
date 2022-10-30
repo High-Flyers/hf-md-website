@@ -51,7 +51,9 @@ type DescProps = {
 const Desc = ({ link, children }: DescProps) => {
   return (
     <Link href={link}>
-      <a className="p-3 hover:underline font-bold">{children}</a>
+      <a className="text-sm md:text-l p-3 hover:underline font-bold">
+        {children}
+      </a>
     </Link>
   );
 };
