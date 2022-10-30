@@ -3,14 +3,27 @@ import { join } from "path";
 import matter from "gray-matter";
 
 const postsDirectory = join(process.cwd(), "_posts");
+const sitesDirectory = join(process.cwd(), "_sites");
+
+export function getSiteSlugs() {
+  return fs.readdirSync(sitesDirectory);
+}
 
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
 }
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
+  return getBySlug(slug, fields, postsDirectory);
+}
+
+export function getSiteBySlug(slug: string, fields: string[] = []) {
+  return getBySlug(slug, fields, sitesDirectory);
+}
+
+function getBySlug(slug: string, fields: string[] = [], dir: string) {
   const realSlug = slug.replace(/\.md$/, "");
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
+  const fullPath = join(dir, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
@@ -35,6 +48,12 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   });
 
   return items;
+}
+
+export function getAllSites(fields: string[] = []) {
+  const slugs = getSiteSlugs();
+  const sites = slugs.map((slug) => getSiteBySlug(slug, fields));
+  return sites;
 }
 
 export function getAllPosts(fields: string[] = []) {
