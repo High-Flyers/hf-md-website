@@ -36,11 +36,11 @@ const Pagination = ({ allPages, currentPage }: Props) => {
         <ul className="inline-flex items-center -space-x-px">
           <LeftArrow index={currentPage} allPages={allPages} />
           {before.map((i) => (
-            <Counter index={i} isCurrent={false} />
+            <Counter index={i} isCurrent={false} key={i} />
           ))}
           <Counter index={currentPage} isCurrent={true} />
           {after.map((i) => (
-            <Counter index={i} isCurrent={false} />
+            <Counter index={i} isCurrent={false} key={i} />
           ))}
           <RightArrow index={currentPage} allPages={allPages} />
         </ul>

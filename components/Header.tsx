@@ -31,8 +31,10 @@ const Header = ({}: Props) => {
             </div>
           </Link>{" "}
           <div className="ml-auto mr-4 mt-auto mb-auto flex">
-            {panels.map((p) => (
-              <Desc link={p.link}>{p.children}</Desc>
+            {panels.map((p, i) => (
+              <Desc link={p.link} key={i.toString()}>
+                {p.children}
+              </Desc>
             ))}
           </div>
         </div>
