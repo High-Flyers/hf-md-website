@@ -20,3 +20,11 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+.markdown li {
+  @apply space-y-1 max-w-md list-disc list-inside;
+}
+
+.markdown a {
+  @apply font-medium text-blue-600 dark:text-blue-500 hover:underline;
+}

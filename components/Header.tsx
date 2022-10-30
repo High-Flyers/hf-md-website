@@ -6,15 +6,15 @@ const Header = ({}: Props) => {
   const panels: DescProps[] = [
     {
       children: "O NAS",
-      link: "/site/about-us",
+      link: "/sites/about-us",
     },
     {
       children: "PROJEKTY",
-      link: "#",
+      link: "/sites/projects",
     },
     {
       children: "KONTAKT",
-      link: "#",
+      link: "/sites/contact",
     },
   ];
 
