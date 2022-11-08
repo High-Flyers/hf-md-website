@@ -64,16 +64,16 @@ a separate site available through navbar. This is done with these steps:
 ## Missing css in markdown
 
 Some features of markdown are not supported yet.
-You can notice it, when certain markdown element displatys just like normal 'div'.
-To add new css you need to find out to what 'html'
-component given 'md' component is translated to.
-You can do this using 'inspect' tool in the browser. Then edit file 'components/markdown-styles.module.css'.
-Edit it like normal 'css' file.
+You can notice it, when certain markdown element displatys just like normal div.
+To add new css you need to find out to what html
+component given md component is translated to.
+You can do this using inspect tool in the browser. Then edit file 'components/markdown-styles.module.css'.
+Edit it like normal css file.
 You should use 'tailwindcss' expressions to add new features.
 
 ## Deployment
 
-The easiest way is to use 'Vercel'.
+The easiest way is to use Vercel.
 In this way every changed pushed to 'main' branch of the project will be updated.
 
 ## Running locally
@@ -91,6 +91,6 @@ with your browser to see the result.
 
 ## ToDo
 
-- [] Navbar collapsing to hamburger on small screens
-- [] Rewrite blog posts from old website
-- [] Make better sites
+- [ ] Navbar collapsing to hamburger on small screens
+- [ ] Rewrite blog posts from old website
+- [ ] Make better sites
