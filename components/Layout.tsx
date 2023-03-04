@@ -13,11 +13,6 @@ export const Layout: React.FC<Props> = ({ children }) => {
         {children}
         <Sponsors />
       </main>
-      <footer className="bg-bg-popstar py-4">
-        <div className="container mx-auto flex justify-center">
-          &copy; 2022 High Flyers
-        </div>
-      </footer>
     </div>
   );
 };
