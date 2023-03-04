@@ -6,10 +6,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "bg-forga": "#0D1F2D",
-        "bg-eleblu": "#546A7B",
-        "bg-beubl": "#B2CEDE",
-        "bg-popstar": "#B24C63",
+        "my-background": "#F5F5F5",
+        "my-foreground": "#37371F",
+        "my-button": "#5B8E7D",
+        "my-contrast": "#8884FF",
+      },
+      fontFamily: {
+        orbitron: ["Orbitron", "sans-serif"],
+        saira: ["Saira", "sans-serif"],
       },
     },
   },
