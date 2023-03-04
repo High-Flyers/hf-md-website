@@ -20,23 +20,33 @@ const Header = ({}: Props) => {
 
   return (
     <>
-      <header className="bg-bg-beubl py-2 sticky top-0 z-10">
+      <header className="bg-my-foreground py-2 sticky top-0 z-10">
         <div className="container mx-auto flex ">
           <Link href="/">
             <div className="flex items-center">
-              <img src="/hf_logo.png" className="max-h-12 p-1 flex-none" />
-              <h1 className="hidden md:block font-bold text-xl ">
-                High Flyers
-              </h1>
+              <img
+                src="/hf_logo_white.png"
+                className="max-h-12 p-1 flex-none"
+                alt="logo"
+              />
+              <div className="ml-2">
+                <h1 className="block font-orbitron font-extrabold text-white text-2xl">
+                  HIGH FLYERS
+                </h1>
+                <div className="bg-my-contrast w-2/3 h-1 mt-1" />
+              </div>
             </div>
           </Link>{" "}
-          <div className="ml-auto mr-4 mt-auto mb-auto flex">
-            {panels.map((p, i) => (
-              <Desc link={p.link} key={i.toString()}>
-                {p.children}
-              </Desc>
-            ))}
+          <div className="md:hidden max-h-14 ml-auto mr-4 mt-auto mb-auto">
+            <img src="/hamburger.svg" alt="hamburger" />
           </div>
+          {/* <div className="ml-auto mr-4 mt-auto mb-auto flex"> */}
+          {/*   {panels.map((p, i) => ( */}
+          {/*     <Desc link={p.link} key={i.toString()}> */}
+          {/*       {p.children} */}
+          {/*     </Desc> */}
+          {/*   ))} */}
+          {/* </div> */}
         </div>
       </header>
     </>
@@ -51,7 +61,7 @@ type DescProps = {
 const Desc = ({ link, children }: DescProps) => {
   return (
     <Link href={link}>
-      <a className="text-sm md:text-l p-3 hover:underline font-bold">
+      <a className="text-sm md:text-l p-3 hover:underline font-orbitron">
         {children}
       </a>
     </Link>
