@@ -15,6 +15,11 @@ module.exports = {
         orbitron: ["Orbitron", "sans-serif"],
         saira: ["Saira", "sans-serif"],
       },
+      spacing: {
+        footer: "90vh",
+        menubar: "80vw",
+        px2: "2px",
+      },
     },
   },
   plugins: [],
