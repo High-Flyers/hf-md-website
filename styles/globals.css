@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    font-family: Helvetica, system-ui, sans-serif;
-  }
+@font-face {
+  font-family: "Orbitron";
+  src: url("/fonts/Orbitron-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url("/fonts/Saira-VariableFont_wdth\,wght.ttf");
 }
