@@ -19,6 +19,7 @@ module.exports = {
         footer: "90vh",
         menubar: "80vw",
         px2: "2px",
+        accent: "0.38rem",
       },
     },
   },
