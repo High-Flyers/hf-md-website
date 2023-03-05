@@ -17,7 +17,7 @@ export const Hero = ({}: Props) => {
           className="sm:mt-4 p-2 md:w-3/5"
         />
         <div className="hidden md:block mx-4">
-          <div className="text-center font-orbitron text-sm lg:text-lg mt-12">
+          <div className="text-center font-orbitron text-sm lg:text-lg mt-12 xl:mt-24">
             <p>Jesteśmy pasjonatami</p>
             <p>lotnictwa bezzałogowego.</p>
             <p>Rozwijamy się w dziedzinach</p>
