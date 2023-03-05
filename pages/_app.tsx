@@ -3,10 +3,11 @@ import "tailwindcss/tailwind.css";
 import type { AppProps } from "next/app";
 import Layout from "../components/Layout";
 import Head from "next/head";
+import Footer from "../components/footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="bg-bg-eleblu">
+    <div className="bg-my-background">
       <Head>
         <title>HighFlyers</title>
         <meta name="HighFlyers" content="Scientific Organization High Flyers" />
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      <Footer />
     </div>
   );
 }
