@@ -15,6 +15,14 @@ module.exports = {
         orbitron: ["Orbitron", "sans-serif"],
         saira: ["Saira", "sans-serif"],
       },
+      fontSize: {
+        xs: '16px',
+        sm: '20px',
+        base: '24px',
+        lg: '28px',
+        xl: '36px',
+        '2xl': '48px',
+      },
       spacing: {
         footer: "90vh",
         menubar: "80vw",
