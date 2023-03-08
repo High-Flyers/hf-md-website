@@ -42,10 +42,10 @@ const Header = ({}: Props) => {
                 alt="logo"
               />
               <div className="ml-2">
-                <h1 className="block font-orbitron font-extrabold text-white text-2xl">
+                <h1 className="block font-orbitron font-extrabold text-white text-lg">
                   HIGH FLYERS
                 </h1>
-                <div className="bg-my-contrast w-2/3 h-1 mt-1" />
+                <div className="bg-my-contrast w-2/3 h-1" />
               </div>
             </div>
           </Link>{" "}
