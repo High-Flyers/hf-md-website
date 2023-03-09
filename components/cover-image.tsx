@@ -11,7 +11,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
     <img
       src={src}
       alt={`Cover Image for ${title}`}
-      className="w-10/12 ml-auto mr-auto scale-100 hover:scale-105 transition duration-150"
+      className="w-full ml-auto mr-auto scale-100 hover:scale-105 transition duration-150"
     />
   );
   return (
