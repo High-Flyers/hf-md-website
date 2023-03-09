@@ -42,7 +42,7 @@ const Header = ({}: Props) => {
                 alt="logo"
               />
               <div>
-                <h1 className="block font-orbitron font-bold text-white text-sm md:text-lg">
+                <h1 className="block font-special font-bold text-white text-sm md:text-lg">
                   HIGH FLYERS
                 </h1>
                 <div className="bg-my-contrast w-2/3 h-1 mt-0.5" />
@@ -90,7 +90,7 @@ type DescPCProps = {
 const DescPC = ({ link, children }: DescPCProps) => {
   return (
     <Link href={link}>
-      <a className="text-md font-orbitron text-white ml-4 hover:font-bold">
+      <a className="text-md font-special text-white ml-4 hover:font-bold">
         {children}
       </a>
     </Link>
@@ -109,7 +109,7 @@ const DescMobile = ({ link, children, setToggle }: DescMobileProps) => {
       <Link href={link}>
         <div className="w-menubar">
           <div
-            className="text-white font-orbitron text-3xl text-center"
+            className="text-white font-special text-3xl text-center"
             onClick={() => setToggle()}
           >
             {children}

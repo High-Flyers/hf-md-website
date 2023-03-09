@@ -12,8 +12,8 @@ module.exports = {
         "my-contrast": "#8884FF",
       },
       fontFamily: {
-        orbitron: ["Orbitron", "sans-serif"],
-        saira: ["Saira", "sans-serif"],
+        special: ["Orbitron", "sans-serif"],
+        base: ["Saira", "sans-serif"],
       },
       fontSize: {
         '2xs': '12px',
