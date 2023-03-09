@@ -33,30 +33,30 @@ const Header = ({}: Props) => {
   return (
     <>
       <header className="bg-my-foreground py-2 h-16 sticky top-0 z-20">
-        <div className="container mx-auto flex ">
+        <div className="mx-auto h-full flex items-center px-3">
           <Link href="/">
-            <div className="flex items-center">
+            <div className="flex gap-x-3 items-center" onClick={() => setToggle(false)}>
               <img
                 src="/hf_logo_white.png"
-                className="max-h-12 p-1 flex-none"
+                className="h-8 md:h-10 pt-1"
                 alt="logo"
               />
-              <div className="ml-2">
-                <h1 className="block font-orbitron font-extrabold text-white text-lg">
+              <div>
+                <h1 className="block font-orbitron font-bold text-white text-sm md:text-lg">
                   HIGH FLYERS
                 </h1>
-                <div className="bg-my-contrast w-2/3 h-1" />
+                <div className="bg-my-contrast w-2/3 h-1 mt-0.5" />
               </div>
             </div>
           </Link>{" "}
           <button
-            className="md:hidden max-h-14 ml-auto mr-4 mt-auto mb-auto"
+            className="md:hidden max-h-14 ml-auto mt-auto mb-auto"
             onClick={() => setToggle(!toggle)}
           >
             {!toggle && <img src="/hamburger.svg" alt="hamburger" />}{" "}
             {toggle && <img src="/close.svg" alt="close menu" />}
           </button>
-          <div className="ml-auto mt-auto mb-auto hidden md:flex lg:mr-4">
+          <div className="ml-auto mt-auto mb-auto hidden md:flex">
             {panels.map((p, i) => (
               <DescPC link={p.link} key={i.toString()}>
                 {p.children}
