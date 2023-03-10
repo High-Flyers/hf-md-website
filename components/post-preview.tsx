@@ -1,41 +1,44 @@
-import Avatar from "./avatar";
 import DateFormatter from "./date-formatter";
-import CoverImage from "./cover-image";
 import Link from "next/link";
-import type Author from "../interfaces/author";
 
 type Props = {
   title: string;
   coverImage: string;
   date: string;
   excerpt: string;
-  author: Author;
   slug: string;
 };
 
-const PostPreview = ({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}: Props) => {
+const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
-      </div>
-      <h3 className="text-3xl mb-3 leading-snug">
+    <div className="bg-my-postshow relative h-full flex flex-col justify-between">
+      <div>
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a className="hover:underline">{title}</a>
+          <div className="mb-5 h-[200px] overflow-hidden">
+            <img
+              src={coverImage}
+              alt={`Cover Image for ${title}`}
+              className="block h-full w-full object-cover object-center hover:scale-105 transition duration-150"
+            />
+          </div>
         </Link>
-      </h3>
-      <div className="text-lg mb-4">
-        <DateFormatter dateString={date} />
+        <div className="flex flex-col gap-y-3 mx-3">
+          <h3 className="text-xl font-saira leading-snug">
+            <Link as={`/posts/${slug}`} href="/posts/[slug]">
+              <a className="hover:underline">{title}</a>
+            </Link>
+          </h3>
+          <div className="text-lg ">
+            <DateFormatter dateString={date} />
+          </div>
+          <p className="text-lg leading-relaxed  font-saira">{excerpt}</p>
+        </div>
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
+      <button className="block m-3 bg-my-button self-start font-saira text-md p-3 text-white text-center hover:cursor-pointer ">
+        <Link as={`/posts/${slug}`} href="/posts/[slug]">
+          CZYTAJ DALEJ
+        </Link>
+      </button>
     </div>
   );
 };

@@ -6,10 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "my-background": "#F5F5F5",
+        "my-background": "#FFFFFF",
         "my-foreground": "#37371F",
         "my-button": "#5B8E7D",
         "my-contrast": "#8884FF",
+        "my-postshow": "#EFF2EF",
       },
       fontFamily: {
         orbitron: ["Orbitron", "sans-serif"],
