@@ -9,6 +9,7 @@ module.exports = {
         "my-background": "#FFFFFF",
         "my-foreground": "#37371F",
         "my-button": "#5B8E7D",
+        "my-button-hover": "#7BA497",
         "my-contrast": "#8884FF",
         "my-postshow": "#EFF2EF",
       },
