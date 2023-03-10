@@ -21,10 +21,10 @@ const AllPosts: NextPage<Props> = ({ posts, pageNo, allPages }: Props) => {
   }
 
   return (
-    <div className="">
+    <>
       <MoreStories posts={posts} />
       <Pagination allPages={allPages} currentPage={pageNo} />
-    </div>
+    </>
   );
 };
 

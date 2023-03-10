@@ -56,8 +56,8 @@ type CounterProps = {
 
 const Counter = ({ index, isCurrent }: CounterProps) => {
   const className = isCurrent
-    ? "py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-    : "z-10 py-2 px-3 leading-tight text-blue-600 bg-blue-50 border border-blue-300 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white";
+    ? "py-2 px-3 leading-tight text-gray-800 bg-my-button border border-gray-300 hover:bg-my-button-hover hover:text-gray-700"
+    : "z-10 py-2 px-3 leading-tight text-gray-500 bg-my-backround border border-gray-300 hover:bg-gray-100 hover:text-gray-700";
   return (
     <li key={index.toString()}>
       <a href={`/all-posts/${index}`} className={className}>
@@ -78,12 +78,12 @@ const LeftArrow = ({ index }: ArrowProps) => {
     <li key="left_arrow">
       <a
         href={href}
-        className="block py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+        className="block py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
       >
         <span className="sr-only">Previous</span>
         <svg
           aria-hidden="true"
-          className="w-5 h-5"
+          className="w-5 h-[19px]"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -106,12 +106,12 @@ const RightArrow = ({ index, allPages }: ArrowProps) => {
     <li key="right_arrow">
       <a
         href={href}
-        className="block py-2 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+        className="block py-2 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
       >
         <span className="sr-only">Next</span>
         <svg
           aria-hidden="true"
-          className="w-5 h-5"
+          className="w-5 h-[19px]"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"

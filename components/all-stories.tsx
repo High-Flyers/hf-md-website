@@ -4,11 +4,9 @@ type Props = {};
 
 const AllStories = ({}: Props) => {
   return (
-    <div className="flex flex-row-reverse text-4xl mb-4">
-      <Link as="/all-posts/0" href="/all-posts/0">
-        <a className="hover:underline mr-4">Wszystkie Artykuły</a>
-      </Link>
-    </div>
+    <button className="block bg-my-button text-white font-saira px-12 py-2 mx-auto">
+      <Link href="/all-posts/0">WIĘCEJ</Link>
+    </button>
   );
 };
 
