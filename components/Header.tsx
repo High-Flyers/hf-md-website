@@ -35,7 +35,10 @@ const Header = ({}: Props) => {
       <header className="bg-my-foreground py-2 h-16 sticky top-0 z-20">
         <div className="mx-auto h-full flex items-center px-3">
           <Link href="/">
-            <div className="flex gap-x-3 items-center" onClick={() => setToggle(false)}>
+            <div
+              className="flex gap-x-3 items-center hover:cursor-pointer"
+              onClick={() => setToggle(false)}
+            >
               <img
                 src="/hf_logo_white.png"
                 className="h-8 md:h-10 pt-1"
@@ -105,7 +108,7 @@ type DescMobileProps = {
 
 const DescMobile = ({ link, children, setToggle }: DescMobileProps) => {
   return (
-    <div className="w-screen mt-12 flex justify-center">
+    <div className="w-screen mt-12 flex justify-center hover:cursor-pointer">
       <Link href={link}>
         <div className="w-menubar">
           <div

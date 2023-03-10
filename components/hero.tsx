@@ -1,7 +1,7 @@
 import Link from "next/link";
 type Props = {};
 
-export const Hero = ({ }: Props) => {
+export const Hero = ({}: Props) => {
   return (
     <section className="mx-auto">
       <div>
@@ -11,9 +11,11 @@ export const Hero = ({ }: Props) => {
         <div className="h-accent-sm w-1/2 bg-my-contrast mx-auto mt-1" />
       </div>
       <div className="flex flex-col md:flex-row gap-x-8 gap-y-6 justify-center items-center my-6">
-        <img className="block w-full md:basis-1/2" src="/hero.png" alt="High Flyers" />
+        <img className="block md:w-7/12" src="/hero.png" alt="High Flyers" />
         <p className="basis-1/2 text-center font-orbitron text-sm lg:text-lg">
-          Jesteśmy pasjonatami lotnictwa bezzałogowego. Rozwijamy się w dziedzinach konstruowania maszyn bezzałogowych i ich programowania. Robotyka i wizja komputerowa nie jest nam straszna!
+          Jesteśmy pasjonatami lotnictwa bezzałogowego. Rozwijamy się w
+          dziedzinach konstruowania maszyn bezzałogowych i ich programowania.
+          Robotyka i wizja komputerowa nie jest nam straszna!
         </p>
       </div>
       <button className="block bg-my-button text-white font-saira px-5 py-2 mx-auto">
