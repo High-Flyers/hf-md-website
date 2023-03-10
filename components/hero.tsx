@@ -44,7 +44,7 @@ export const Hero = ({}: Props) => {
         </div>
       </div>
       <Link href="/sites/about-us">
-        <div className="bg-my-button h-10 sm:w-4/6 md:w-64 font-saira text-md text-white mx-auto text-center m-4">
+        <div className="bg-my-button h-10 sm:w-4/6 md:w-64 font-saira text-md text-white mx-auto text-center m-4 hover:cursor-pointer">
           <p className="inline-block align-middle mt-2">
             DOWIEDZ SIĘ O NAS WIĘCEJ!
           </p>
