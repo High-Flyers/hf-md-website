@@ -11,10 +11,10 @@ type Props = {
 
 const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
   return (
-    <div className="bg-my-postshow relative h-full flex flex-col justify-between">
+    <div className="bg-my-postshow relative h-full flex flex-col justify-between max-w-[460px]">
       <div>
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <div className="mb-5 h-[200px] overflow-hidden">
+          <div className="mb-5 h-[260px] overflow-hidden">
             <img
               src={coverImage}
               alt={`Cover Image for ${title}`}
