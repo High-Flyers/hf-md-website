@@ -15,6 +15,7 @@ module.exports = {
       },
       fontFamily: {
         special: ["Orbitron", "sans-serif"],
+        additional: ["Teko", "sans-serif"],
         base: ["Saira", "sans-serif"],
       },
       fontSize: {
@@ -24,7 +25,10 @@ module.exports = {
         base: "18px",
         lg: "22px",
         xl: "26px",
+        "1xl": "30px",
         "2xl": "36px",
+        "3xl": "40px",
+        "4xl": "48px"
       },
       spacing: {
         footer: "100vh",
@@ -36,8 +40,8 @@ module.exports = {
       screens: {
         xs: "300px",
         sm: "400px",
-        xl: "1250px",
-        "2xl": "1300px",
+        xl: "1300px",
+        "2xl": "1300px"
       },
     },
   },
