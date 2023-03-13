@@ -11,3 +11,10 @@
   font-family: "Saira";
   src: url("/fonts/Saira-VariableFont_wdth\,wght.ttf");
 }
+
+@font-face {
+  font-family: "Teko";
+  src: url("/fonts/Teko-Bold.ttf");
+  src: url("/fonts/Teko-Regular.ttf");
+  src: url("/fonts/Teko-Light.ttf");
+}
