@@ -1,12 +1,10 @@
 import SponsorImage from "./sponsor-image";
-import SmallHeader from "./utils/small-header";
 
 type Props = {};
 
 export const Sponsors = ({}: Props) => {
   return (
     <div className="lg:w-4/6 lg:mx-auto lg:my-auto">
-      <SmallHeader name="Sponsorzy" />
       <p className="font-base text-base mt-4">
         Nasze koło nie mogłoby rozwijać się bez wsparcia finansowego i
         sprzętowego naszych sponsorów.
