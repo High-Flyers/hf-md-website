@@ -11,7 +11,7 @@ type Props = {
 
 const Index: NextPage<Props> = ({ posts }: Props) => {
   return (
-    <div className="">
+    <div className="flex flex-col gap-y-8">
       <Hero />
       <MoreStories posts={posts} />
       <AllStories />
