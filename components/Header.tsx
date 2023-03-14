@@ -18,7 +18,7 @@ const Header = ({}: Props) => {
     },
     {
       children: "REKRUTACJA",
-      link: "/sites/recruitment",
+      link: "/recruitment",
     },
     {
       children: "PROJEKTY",
