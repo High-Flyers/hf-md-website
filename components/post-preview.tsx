@@ -34,7 +34,7 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
           <p className="text-lg leading-relaxed  font-saira">{excerpt}</p>
         </div>
       </div>
-      <button className="block m-3 bg-my-button self-start font-saira text-md p-3 text-white text-center hover:cursor-pointer ">
+      <button className="block m-3 bg-my-button self-start font-saira text-md p-3 text-white text-center hover:cursor-pointer hover:bg-my-button-hover">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           CZYTAJ DALEJ
         </Link>
