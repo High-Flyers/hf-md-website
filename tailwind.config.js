@@ -8,9 +8,11 @@ module.exports = {
       colors: {
         "my-background": "#FFFFFF",
         "my-foreground": "#37371F",
+        "my-dark-background": "#D9D9D9",
         "my-button": "#5B8E7D",
         "my-button-hover": "#7BA497",
         "my-contrast": "#8884FF",
+        "my-contrast-hover": "#C4C2FF",
         "my-postshow": "#EFF2EF",
       },
       fontFamily: {
@@ -28,7 +30,7 @@ module.exports = {
         "1xl": "30px",
         "2xl": "36px",
         "3xl": "40px",
-        "4xl": "48px"
+        "4xl": "48px",
       },
       spacing: {
         footer: "100vh",
@@ -41,7 +43,7 @@ module.exports = {
         xs: "300px",
         sm: "400px",
         xl: "1300px",
-        "2xl": "1300px"
+        "2xl": "1300px",
       },
     },
   },

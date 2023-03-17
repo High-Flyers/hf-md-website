@@ -20,12 +20,12 @@ const Recruitment: NextPage<{}> = () => {
       <SmallHeader name="OSIĄGNIĘCIA" />
       <div className="py-4 font-base text-md">
         2023:
-        <ul className="list-disc mx-8 ml-8 marker:text-my-contrast">
+        <ul className="list-disc my-4 ml-8 marker:text-my-contrast">
           <li>Droniada, Polska, zawody krajowe - II miejsce</li>
           <li>AUAV, USA, zawody międzynarodowe - III miejsce</li>
         </ul>
         2022:
-        <ul className="list-disc mx-8 ml-8 marker:text-my-contrast">
+        <ul className="list-disc my-4 ml-8 marker:text-my-contrast">
           <li>Droniada, Polska, zawody krajowe - I miejsce</li>
           <li>
             AUAV, USA, zawody międzynarodowe - I miejsce w kwalifikacjach,
