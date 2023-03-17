@@ -18,7 +18,7 @@ export const Hero = ({}: Props) => {
           Robotyka i wizja komputerowa nie jest nam straszna!
         </p>
       </div>
-      <button className="block px-5 py-2 mx-auto bg-my-button text-white text-xs lg:text-sm">
+      <button className="block px-5 py-2 mx-auto bg-my-button text-white text-xs lg:text-sm hover:bg-my-button-hover">
         <Link href="/about-us">DOWIEDZ SIĘ O NAS WIĘCEJ!</Link>
       </button>
       <div className="flex gap-10 justify-center mt-4">
