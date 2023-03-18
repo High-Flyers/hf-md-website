@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LinkButton from "./utils/link-button";
 import MainTitle from "./utils/main-title";
 type Props = {};
 
@@ -16,9 +17,7 @@ export const Hero = ({ }: Props) => {
           Robotyka i wizja komputerowa nie jest nam straszna!
         </p>
       </div>
-      <button className="block px-5 py-2 mx-auto bg-my-button text-white text-xs lg:text-sm">
-        <Link href="/sites/about-us">DOWIEDZ SIĘ O NAS WIĘCEJ!</Link>
-      </button>
+      <LinkButton name="DOWIEDZ SIĘ O NAS WIĘCEJ!" link="/sites/about-us" className="mx-auto"/>
       <div className="flex gap-10 justify-center mt-4">
         <a
           className="w-10"
