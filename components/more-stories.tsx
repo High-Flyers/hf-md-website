@@ -10,7 +10,7 @@ const MoreStories = ({ posts }: Props) => {
   return (
     <section>
       <SectionTitle name="AKTUALNOŚCI" />
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 xl:gap-x-64 gap-y-20 md:gap-y-32 mb-4 p-4">
+      <div className="grid grid-cols-1 mt-8 items-center gap-x-8 gap-y-8 md:grid-cols-2 xl:grid-cols-3">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}

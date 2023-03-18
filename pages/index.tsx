@@ -3,7 +3,7 @@ import Hero from "../components/hero";
 import { getNPosts } from "../lib/api";
 import Post from "../interfaces/post";
 import MoreStories from "../components/more-stories";
-import AllStories from "../components/all-stories";
+import LinkButton from "../components/utils/link-button";
 
 type Props = {
   posts: Post[];
@@ -14,7 +14,7 @@ const Index: NextPage<Props> = ({ posts }: Props) => {
     <div className="flex flex-col gap-y-8">
       <Hero />
       <MoreStories posts={posts} />
-      <AllStories />
+      <LinkButton name="WIĘCEJ" link="/all-posts/0" className="mx-auto px-14" />
     </div>
   );
 };
@@ -22,7 +22,7 @@ const Index: NextPage<Props> = ({ posts }: Props) => {
 export default Index;
 
 export const getStaticProps = async () => {
-  const posts = getNPosts(2, [
+  const posts = getNPosts(3, [
     "title",
     "date",
     "slug",
