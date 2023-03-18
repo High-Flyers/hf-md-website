@@ -19,7 +19,7 @@ export const Hero = ({}: Props) => {
           Robotyka i wizja komputerowa nie jest nam straszna!
         </p>
       </div>
-      <LinkButton name="DOWIEDZ SIĘ O NAS WIĘCEJ!" link="/sites/about-us" className="mx-auto"/>
+      <LinkButton name="DOWIEDZ SIĘ O NAS WIĘCEJ!" link="/about-us" className="mx-auto"/>
       <div className="flex gap-10 justify-center mt-4">
         <a
           className="w-10"
