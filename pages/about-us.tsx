@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Sponsors from "../components/sponsors";
 import SectionTitle from "../components/utils/section-title";
 
 const AboutUs: NextPage<{}> = () => {
@@ -37,6 +38,8 @@ const AboutUs: NextPage<{}> = () => {
           </li>
         </ul>
       </div>
+      <SectionTitle name="SPONSORZY" />
+      <Sponsors />
     </section>
   );
 };
