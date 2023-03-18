@@ -1,7 +1,7 @@
 type Props = {
-    name: string;
-    className?: string;
-    classNameUnderline?: string;
+  name: string;
+  className?: string;
+  classNameUnderline?: string;
 };
 
 const MainTitle = ({ name, className, classNameUnderline }: Props) => {

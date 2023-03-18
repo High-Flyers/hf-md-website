@@ -1,5 +1,6 @@
 import Sponsors from "./sponsors";
 import Header from "./Header";
+import SmallHeader from "./utils/small-header";
 
 type Props = {
   children: JSX.Element;
@@ -11,7 +12,8 @@ export const Layout: React.FC<Props> = ({ children }) => {
       <Header />
       <main className="container flex flex-col gap-y-8 mx-auto flex-1 p-4 bg-my-background text-black">
         {children}
-        <Sponsors/>
+        <SmallHeader name="SPONSORZY" />
+        <Sponsors />
       </main>
     </div>
   );
