@@ -36,7 +36,7 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
             <p className="text-xs leading-relaxed font-saira md:text-base">{excerpt}</p>
           </div>
         </div>
-        <LinkButton name="CZYTAJ DALEJ" link={`/posts/${slug}`} className="mt-3 self-start" />
+        {/* <LinkButton name="CZYTAJ DALEJ" link={`/posts/${slug}`} className="mt-3 self-start" /> */}
       </div>
     </div>
   );
