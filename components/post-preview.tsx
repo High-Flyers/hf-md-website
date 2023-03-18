@@ -22,7 +22,7 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
             />
         </Link>
       </div>
-      <div className="flex flex-col justify-between grow p-3">
+      <div className="flex flex-col justify-between grow p-3 ">
         <div>
           <div className="flex flex-col gap-y-3">
             <h3 className="text-base font-saira leading-snug md:text-xl">
@@ -36,7 +36,7 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
             <p className="text-xs leading-relaxed font-saira md:text-base">{excerpt}</p>
           </div>
         </div>
-        {/* <LinkButton name="CZYTAJ DALEJ" link={`/posts/${slug}`} className="mt-3 self-start" /> */}
+        <LinkButton name="CZYTAJ DALEJ" link={`/posts/${slug}`} className="mt-3 self-start" />
       </div>
     </div>
   );

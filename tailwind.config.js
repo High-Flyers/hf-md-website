@@ -14,7 +14,7 @@ module.exports = {
         "my-contrast": "#8884FF", // #7C809B
         "my-contrast-hover": "#C4C2FF",
         "my-special": "#F6AE2D",
-        "my-postshow": "#EFF2EF",
+        "my-gray": "#8896AB"
       },
       fontFamily: {
         special: ["Orbitron", "sans-serif"],
@@ -46,6 +46,9 @@ module.exports = {
         sm: "400px",
         xl: "1300px",
         "2xl": "1300px",
+      },
+      boxShadow: {
+        "shift-solid": "9px 9px 0px -2px #304C76, 19px 19px 0px -4px #001024"
       },
     },
   },
