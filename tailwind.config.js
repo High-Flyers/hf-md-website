@@ -28,7 +28,8 @@ module.exports = {
         "1xl": "30px",
         "2xl": "36px",
         "3xl": "40px",
-        "4xl": "48px"
+        "4xl": "48px",
+        "5xl": "56px",
       },
       spacing: {
         footer: "100vh",

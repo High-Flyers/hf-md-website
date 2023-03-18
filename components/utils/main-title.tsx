@@ -7,7 +7,7 @@ type Props = {
 const MainTitle = ({ name, className, classNameUnderline }: Props) => {
     return (
         <div className={"font-additional font-bold text-sm mx-auto text-xl w-fit \
-                         md:text-base m:text-xl md:text-2xl lg:text-4xl " + className}>
+                         md:text-base m:text-xl md:text-2xl lg:text-4xl xl:text-5xl " + className}>
             <h3 className="text-center w-fit mx-auto">
                 {name}
             </h3>
