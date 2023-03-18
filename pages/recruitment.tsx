@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useState } from "react";
 import MainTitle from "../components/utils/main-title";
-import SmallHeader from "../components/utils/small-header";
+import SectionTitle from "../components/utils/section-title";
 
 const job_descriptions: ExpaderData[] = [
   {
@@ -155,40 +155,48 @@ const job_descriptions: ExpaderData[] = [
 const Recruitment: NextPage<{}> = () => {
   const [opened, setOpened] = useState(-1);
   return (
-    <>
-      <MainTitle name="REKRUTACJA TRWA!" />
-      <p className="font-base text-md md:text-lg text-center max-w-xl mx-auto">
-        Po wybraniu interesującego cię stanowisko wypełnij formularz wybierając
-        odpowiednią rolę, a my skontaktujemy się z tobą w przeciągu kolejnych
-        dni.
-      </p>
-      <button className="block px-5 py-2 mx-auto bg-my-button text-white text-xs lg:text-sm hover:bg-my-button-hover">
-        <a
-          href="https://www.google.pl/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          WYPEŁNI FORMULARZ!
-        </a>
-      </button>
-      <SmallHeader name="DLACZEGO MY?" />
-      <ul className="list-disc my-4 ml-6 md:ml-12 text-md md:text-lg marker:text-my-contrast">
-        <li>Dobry kontakt z firmami</li>
-        <li>Luźna atmosfera</li>
-      </ul>
-      <SmallHeader name="KOGO SZUKAMY?" />
-      {job_descriptions.map((job, i) => (
-        <Expander
-          key={i}
-          data={job}
-          active={i == opened}
-          setActive={() => {
-            if (i == opened) setOpened(-1);
-            else setOpened(i);
-          }}
-        />
-      ))}
-    </>
+    <section className="flex flex-col gap-y-4 py-4">
+      <section>
+        <MainTitle name="REKRUTACJA TRWA!" />
+        <p className="font-base text-md md:text-lg text-center max-w-xl mx-auto my-4">
+          Po wybraniu interesującego cię stanowisko wypełnij formularz wybierając
+          odpowiednią rolę, a my skontaktujemy się z tobą w przeciągu kolejnych
+          dni.
+        </p>
+        <button className="block px-5 py-2 mx-auto bg-my-button text-white text-xs lg:text-sm hover:bg-my-button-hover">
+          <a
+            href="https://www.google.pl/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            WYPEŁNI FORMULARZ!
+          </a>
+        </button>
+      </section>
+      <div>
+        <SectionTitle name="DLACZEGO MY?" />
+        <ul className="list-disc mt-4 ml-6 md:ml-12 text-md md:text-lg marker:text-my-contrast">
+          <li>Dobry kontakt z firmami</li>
+          <li>Luźna atmosfera</li>
+        </ul>
+      </div>
+      <div>
+        <SectionTitle name="KOGO SZUKAMY?" />
+        <div className="flex flex-col gap-y-4 mt-4">
+          {job_descriptions.map((job, i) => (
+            <Expander
+              key={i}
+              data={job}
+              active={i == opened}
+              setActive={() => {
+                if (i == opened) setOpened(-1);
+                else setOpened(i);
+              }}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
@@ -209,7 +217,7 @@ type ExpanderProps = {
 
 const Expander = ({ data, active, setActive }: ExpanderProps) => {
   const [contrastBar, contrastHover, contrastText] = active
-    ? ["bg-my-contrast", "bg-my-contrast-hover", "text-my-contrast"]
+    ? ["bg-my-special", "bg-my-contrast-hover", "text-my-special"]
     : ["bg-my-button", "bg-my-button-hover", "text-my-button"];
   return (
     <div className="flex  mx-auto w-full">

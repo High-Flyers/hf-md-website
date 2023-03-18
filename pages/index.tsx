@@ -11,7 +11,7 @@ type Props = {
 
 const Index: NextPage<Props> = ({ posts }: Props) => {
   return (
-    <div className="flex flex-col gap-y-8">
+    <div className="flex flex-col gap-y-8 py-4">
       <Hero />
       <MoreStories posts={posts} />
       <LinkButton name="WIĘCEJ" link="/all-posts/0" className="mx-auto px-14" />
