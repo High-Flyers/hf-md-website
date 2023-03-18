@@ -7,12 +7,13 @@ module.exports = {
     extend: {
       colors: {
         "my-background": "#FFFFFF",
-        "my-foreground": "#37371F",
+        "my-foreground": "#001524",
         "my-dark-background": "#D9D9D9",
-        "my-button": "#5B8E7D",
-        "my-button-hover": "#7BA497",
-        "my-contrast": "#8884FF",
+        "my-button": "#7B8CDE", // #50808E
+        "my-button-hover": "#8884FF",
+        "my-contrast": "#8884FF", // #7C809B
         "my-contrast-hover": "#C4C2FF",
+        "my-special": "#F6AE2D",
         "my-postshow": "#EFF2EF",
       },
       fontFamily: {
