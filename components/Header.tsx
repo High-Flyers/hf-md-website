@@ -14,11 +14,11 @@ const Header = ({}: Props) => {
   const panels: any[] = [
     {
       children: "O NAS",
-      link: "/sites/about-us",
+      link: "/about-us",
     },
     {
       children: "REKRUTACJA",
-      link: "/sites/recruitment",
+      link: "/recruitment",
     },
     {
       children: "PROJEKTY",

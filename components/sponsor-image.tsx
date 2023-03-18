@@ -2,9 +2,10 @@ type Props = {
   src: string;
   alt: string;
   link: string;
+  small: boolean;
 };
 
-export const SponsorImage = ({ src, alt, link }: Props) => {
+export const SponsorImage = ({ src, alt, link, small }: Props) => {
   return (
     <a
       className="w-48 self-center"
@@ -12,7 +13,11 @@ export const SponsorImage = ({ src, alt, link }: Props) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={src} alt={alt} />
+      {small ? (
+        <img className="w-48 h-48 object-contain" src={src} alt={alt} />
+      ) : (
+        <img className="object-contain mx-auto" src={src} alt={alt} />
+      )}
     </a>
   );
 };
