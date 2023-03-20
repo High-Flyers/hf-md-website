@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
-import SmallHeader from "../components/utils/small-header";
+import Sponsors from "../components/sponsors";
+import SectionTitle from "../components/utils/section-title";
 
-const Recruitment: NextPage<{}> = () => {
+const AboutUs: NextPage<{}> = () => {
   return (
-    <>
-      <SmallHeader name="KIM JESTEŚMY?" />
+    <section className="py-4">
+      <SectionTitle name="KIM JESTEŚMY?" />
       <p className="font-base text-md">
         High Flyers to Międzywydziałowe Studenckie Koło Naukowe, którego celem
         jest tworzenie bezzałogowych pojazdów powietrznych oraz systemów
@@ -17,7 +18,7 @@ const Recruitment: NextPage<{}> = () => {
         Politechniki Śląskiej oraz firmy Flytronic powstało Międzywydziałowe
         Koło Naukowe Bezzałogowych Obiektów Latających High Flyers.”
       </p>
-      <SmallHeader name="OSIĄGNIĘCIA" />
+      <SectionTitle name="OSIĄGNIĘCIA" />
       <div className="py-4 font-base text-md">
         2023:
         <ul className="list-disc my-4 ml-8 marker:text-my-contrast">
@@ -37,8 +38,10 @@ const Recruitment: NextPage<{}> = () => {
           </li>
         </ul>
       </div>
-    </>
+      <SectionTitle name="SPONSORZY" />
+      <Sponsors />
+    </section>
   );
 };
 
-export default Recruitment;
+export default AboutUs;
