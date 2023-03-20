@@ -17,7 +17,7 @@ export const Sponsors = ({}: Props) => {
           link="https://www.wbgroup.pl/flytronic/"
           small={false}
         />
-        <h2 className="font-special text-xl font-bold text-center">
+        <h2 className="font-special text-md md:text-xl font-bold text-center">
           SPONSOR STRATEGICZNY
         </h2>
       </div>

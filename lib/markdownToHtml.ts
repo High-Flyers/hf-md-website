@@ -41,7 +41,5 @@ export default async function markdownToHtml(markdown: string) {
     resultStr = resultStr.replace(rep.prev, rep.next);
   });
 
-  console.log(resultStr);
-
   return resultStr;
 }
