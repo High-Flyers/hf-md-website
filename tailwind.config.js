@@ -7,13 +7,15 @@ module.exports = {
     extend: {
       colors: {
         "my-background": "#FFFFFF",
-        "my-foreground": "#37371F",
+        "my-postshow": "#F0F0F0",
+        "my-foreground": "#001524",
         "my-dark-background": "#D9D9D9",
-        "my-button": "#5B8E7D",
-        "my-button-hover": "#7BA497",
-        "my-contrast": "#8884FF",
+        "my-button": "#7B8CDE", // #50808E
+        "my-button-hover": "#8884FF",
+        "my-contrast": "#8884FF", // #7C809B
         "my-contrast-hover": "#C4C2FF",
-        "my-postshow": "#EFF2EF",
+        "my-special": "#F6AE2D",
+        "my-gray": "#8896AB",
       },
       fontFamily: {
         special: ["Orbitron", "sans-serif"],
@@ -45,6 +47,9 @@ module.exports = {
         sm: "400px",
         xl: "1300px",
         "2xl": "1300px",
+      },
+      boxShadow: {
+        "shift-solid": "9px 9px 0px -2px #304C76, 19px 19px 0px -4px #001024",
       },
     },
   },

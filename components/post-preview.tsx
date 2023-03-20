@@ -15,14 +15,14 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
     <div className="bg-my-postshow w-full h-full flex flex-col max-w-[460px] mx-auto">
       <div className="w-full h-[150px] overflow-hidden sm:h-[170px] md:h-[200px]">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-            <img
-              src={coverImage}
-              alt={`Cover Image for ${title}`}
-              className="block h-full w-full object-cover object-center hover:scale-105 transition duration-150 hover:cursor-pointer"
-            />
+          <img
+            src={coverImage}
+            alt={`Cover Image for ${title}`}
+            className="block h-full w-full object-cover object-center hover:scale-105 transition duration-150 hover:cursor-pointer"
+          />
         </Link>
       </div>
-      <div className="flex flex-col justify-between grow p-3">
+      <div className="flex flex-col justify-between grow p-3 ">
         <div>
           <div className="flex flex-col gap-y-3">
             <h3 className="text-base font-saira leading-snug md:text-xl">
@@ -33,10 +33,16 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
             <div className="text-2xs md:text-sm">
               <DateFormatter dateString={date} />
             </div>
-            <p className="text-xs leading-relaxed font-saira md:text-base">{excerpt}</p>
+            <p className="text-xs leading-relaxed font-saira md:text-base">
+              {excerpt}
+            </p>
           </div>
         </div>
-        <LinkButton name="CZYTAJ DALEJ" link={`/posts/${slug}`} className="mt-3 self-start" />
+        <LinkButton
+          name="CZYTAJ DALEJ"
+          link={`/posts/${slug}`}
+          className="mt-3 self-start"
+        />
       </div>
     </div>
   );
