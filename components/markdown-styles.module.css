@@ -6,19 +6,19 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6 font-base;
+  @apply my-6 font-base text-sm md:text-base;
 }
 
 .markdown h1 {
-  @apply text-4xl mt-12  mb-2 leading-snug font-base;
+  @apply text-xl md:text-4xl mt-12  mb-2 leading-snug font-base;
 }
 
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug font-base;
+  @apply text-lg md:text-3xl mt-12 mb-4 leading-snug font-base;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug font-base;
+  @apply text-base md:text-2xl mt-8 mb-4 leading-snug font-base;
 }
 
 .markdown li {
