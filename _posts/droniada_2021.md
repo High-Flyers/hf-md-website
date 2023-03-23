@@ -10,8 +10,6 @@ ogImage:
   url: "/droniada_2021/front.jpg"
 ---
 
-# Droniada 2021
-
 ## Z przyjemnością informujemy, że nasz zespół zdobył I miejsce w klasyfikacji generalnej na zawodach Droniada 2021
 
 W tym roku konkurs odbył się  w dniach 28.06-03.07 w Poznaniu na lotnisku EPPG Kąkolewo. Tegoroczne zawody obejmowały trzy konkurencje: prezentację bezzałogowego systemu latającego (BSL), identyfikację obszarów zajętych przez patogeny chorób roślin (konkurencja „Trzy kolory”) oraz wykrycie w sadzie parcha i mączniaka jabłoni, a następnie ich precyzyjny oprysk środkami ochrony roślin symulowany przez kulki paintballowe (konkurencja „Drzewo życia”). Nasza drużyna zdobyła odpowiednio:

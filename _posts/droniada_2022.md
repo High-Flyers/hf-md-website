@@ -10,8 +10,6 @@ ogImage:
   url: "/droniada_2022/droniada2022.jpg"
 ---
 
-# Droniada 2022
-
 ## Nasz zespół osiągnął kolejny sukces
 
 Zdobyliśmy 1 miejsce w konkurencji „Sztafeta” na konkursie technologicznym Droniada GZM 2022.
