@@ -1,9 +1,15 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      xs: "300px",
+      ...defaultTheme.screens,
+    },
     extend: {
       colors: {
         "my-background": "#FFFFFF",
@@ -34,6 +40,7 @@ module.exports = {
         "3xl": "40px",
         "4xl": "48px",
         "5xl": "56px",
+        "6xl": "66px",
       },
       spacing: {
         footer: "100vh",
@@ -43,7 +50,6 @@ module.exports = {
         "accent-sm": "5px",
       },
       screens: {
-        xs: "300px",
         sm: "400px",
         xl: "1300px",
         "2xl": "1300px",
