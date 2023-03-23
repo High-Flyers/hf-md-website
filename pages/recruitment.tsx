@@ -169,7 +169,7 @@ const Recruitment: NextPage<{}> = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            WYPEŁNI FORMULARZ!
+            WYPEŁNIJ FORMULARZ!
           </a>
         </button>
       </section>
