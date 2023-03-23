@@ -155,7 +155,7 @@ const job_descriptions: ExpaderData[] = [
 const Recruitment: NextPage<{}> = () => {
   const [opened, setOpened] = useState(-1);
   return (
-    <section className="flex flex-col gap-y-4 py-4">
+    <section className="container px-4 mx-auto flex flex-col gap-y-4 py-4">
       <section>
         <MainTitle name="REKRUTACJA TRWA!" />
         <p className="font-base text-md md:text-lg text-center max-w-xl mx-auto my-4">

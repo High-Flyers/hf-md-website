@@ -45,7 +45,7 @@ const Header = ({}: Props) => {
                 alt="logo"
               />
               <div>
-                <h1 className="block font-special font-bold text-white text-sm md:text-lg">
+                <h1 className="block font-special font-bold text-white text-sm sm:text-base md:text-lg">
                   HIGH FLYERS
                 </h1>
                 <div className="bg-my-contrast w-2/3 h-1 mt-0.5" />
@@ -69,7 +69,7 @@ const Header = ({}: Props) => {
         </div>
       </header>
       {toggle && (
-        <div className="sticky block top-14 py-4 left-0 w-screen h-footer bg-my-foreground z-10">
+        <div className="flex flex-col gap-y-8 sticky pt-8 block w-screen h-footer bg-my-foreground z-10">
           {panels.map((p, i) => (
             <DescMobile
               link={p.link}
@@ -108,16 +108,16 @@ type DescMobileProps = {
 
 const DescMobile = ({ link, children, setToggle }: DescMobileProps) => {
   return (
-    <div className="w-screen mt-12 flex justify-center hover:cursor-pointer">
+    <div className="w-screen flex justify-center hover:cursor-pointer">
       <Link href={link}>
         <div className="w-menubar">
           <div
-            className="text-white font-special text-3xl text-center"
+            className="text-white font-special text-base text-center sm:text-lg"
             onClick={() => setToggle()}
           >
             {children}
           </div>
-          <div className="bg-white w-auto h-px2 mt-4" />
+          <div className="bg-white w-auto h-px2 mt-2" />
         </div>
       </Link>
     </div>

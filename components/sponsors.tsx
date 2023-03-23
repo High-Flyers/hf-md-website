@@ -5,12 +5,7 @@ type Props = {};
 export const Sponsors = ({}: Props) => {
   return (
     <div className="lg:w-4/6 lg:mx-auto lg:my-auto">
-      <p className="font-base text-base mt-4">
-        Nasze koło nie mogłoby rozwijać się bez wsparcia finansowego i
-        sprzętowego naszych sponsorów.
-      </p>
-
-      <div className="mt-4 w-8/12 mx-auto">
+      <div className="mt-4 w-full mx-auto">
         <SponsorImage
           src="/sponsors/ft.png"
           alt="Flytronic"
@@ -21,7 +16,7 @@ export const Sponsors = ({}: Props) => {
           SPONSOR STRATEGICZNY
         </h2>
       </div>
-      <div className="p-8 m-8 bg-bg-beubl rounded-2xl border-4 border-white grid justify-items-center content-around grid-cols-1 xl:grid-cols-3 gap-8">
+      <div className="mt-8 bg-bg-beubl rounded-2xl border-4 border-white grid justify-items-center content-around grid-cols-1 md:grid-cols-3 gap-8">
         <SponsorImage
           src="/sponsors/logo-dron.png"
           alt="DronEdu"

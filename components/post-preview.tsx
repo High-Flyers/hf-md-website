@@ -24,16 +24,16 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
       </div>
       <div className="flex flex-col justify-between grow p-3 ">
         <div>
-          <div className="flex flex-col gap-y-3">
-            <h3 className="text-base font-saira leading-snug md:text-xl">
+          <div className="flex flex-col gap-y-1">
+            <h3 className="text-sm font-saira leading-snug md:text-lg">
               <Link as={`/posts/${slug}`} href="/posts/[slug]">
                 <a className="hover:underline">{title}</a>
               </Link>
             </h3>
-            <div className="text-2xs md:text-sm">
+            <div className="text-2xs md:text-xs">
               <DateFormatter dateString={date} />
             </div>
-            <p className="text-xs leading-relaxed font-saira md:text-base">
+            <p className="text-xs leading-relaxed font-saira md:text-sm">
               {excerpt}
             </p>
           </div>
@@ -41,7 +41,7 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
         <LinkButton
           name="CZYTAJ DALEJ"
           link={`/posts/${slug}`}
-          className="mt-3 self-start"
+          className="mt-3 self-start text-2xs"
         />
       </div>
     </div>
