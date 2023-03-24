@@ -4,6 +4,7 @@ excerpt: "Wielozadaniowy samolot o zdolności startu z każdego miejsca."
 coverImage: "/projects/vtol/vtol_01.jpg"
 ogImage:
   url: "/projects/vtol/vtol_01.jpg"
+priority: "1"
 ---
 
 # HF10 - VTOL
