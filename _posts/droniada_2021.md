@@ -1,13 +1,13 @@
 ---
 title: "Droniada 2021 - Zwycięstwo!"
 excerpt: "Z przyjemnością informujemy, że nasz zespół zdobył I miejsce w klasyfikacji generalnej na zawodach Droniada 2021."
-coverImage: "/posts/droniada_2021/droniada2021.jpg"
+coverImage: "/posts/droniada_2021/droniada2021.JPG"
 date: "2021-07-10T21:37:07.322Z"
 author:
   name: Paweł Piórkowski
-  picture: "/authors/PawelPiorkowski.jpg"
+  picture: "/authors/PawelPiorkowski.JPG"
 ogImage:
-  url: "/posts/droniada_2021/droniada2021.jpg"
+  url: "/posts/droniada_2021/droniada2021.JPG"
 ---
 
 # Droniada 2021 - Zwycięstwo!
