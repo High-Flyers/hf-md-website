@@ -70,7 +70,9 @@ export function getAllProjects(fields: string[] = []) {
   const projects = slugs
     .map((slug) => getProjectBySlug(slug, fields))
     // sort posts by date in descending order
-    .sort((proj1, proj2) => (proj1.date > proj2.date ? -1 : 1));
+    .sort(
+      (proj1, proj2) => parseInt(proj1.priority) - parseInt(proj2.priority)
+    );
   return projects;
 }
 

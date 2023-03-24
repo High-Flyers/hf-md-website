@@ -24,6 +24,7 @@ export const getStaticProps = async () => {
     "coverImage",
     "excerpt",
     "ogImage",
+    "priority",
   ]);
 
   return {
