@@ -7,7 +7,7 @@ author:
   name: Paweł Piórkowski
   picture: "/authors/PawelPiorkowski.jpg"
 ogImage:
-  url: "/droniada_2022/droniada2022.jpg"
+  url: "/posts/droniada_2022/droniada2022.jpg"
 ---
 
 ## Nasz zespół osiągnął kolejny sukces
@@ -18,6 +18,6 @@ Naszym zadaniem było stworzenie autonomicznego systemu zdolnego do oświetlenia
 
 Podziękowania i gromkie brawa należą się dla całego zespołu za poświęcony czas i wszelkie wyrzeczenia. Z tego miejsca chcieliśmy również podziękować za wsparcie Politechnice Śląskiej i naszym sponsorom, firmom: DRON.edu.pl i Flytronic S.A.
 
-![Cool image](/posts/lorem_ipsum/droniada2022.jpg "Cool image")
+![Droniada 2022](/posts/droniada_2022/droniada2022.jpg "Droniada 2022")
 
 Zaczynamy przygotowania do kolejnej edycji Droniady i widzimy się znowu za rok!
