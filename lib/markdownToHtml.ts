@@ -11,8 +11,6 @@ export default async function markdownToHtml(markdown: string) {
   const result = await remark().use(html).process(markdown);
   let resultStr = result.toString();
 
-  console.log(resultStr);
-
   {
     // replace imgs
     const regex = /<img.+?(?=>)>/gm;

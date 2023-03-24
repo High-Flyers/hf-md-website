@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 type Props = {};
 
-const Header = ({}: Props) => {
+const Header = ({ }: Props) => {
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
     if (toggle) disableScroll.on();
@@ -22,7 +22,7 @@ const Header = ({}: Props) => {
     },
     {
       children: "PROJEKTY",
-      link: "/sites/projects",
+      link: "/our_projects",
     },
     {
       children: "KONTAKT",

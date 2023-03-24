@@ -4,9 +4,14 @@ import matter from "gray-matter";
 
 const postsDirectory = join(process.cwd(), "_posts");
 const sitesDirectory = join(process.cwd(), "_sites");
+const projectsDirectory = join(process.cwd(), "_projects");
 
 export function getSiteSlugs() {
   return fs.readdirSync(sitesDirectory);
+}
+
+export function getProjectSlugs() {
+  return fs.readdirSync(projectsDirectory);
 }
 
 export function getPostSlugs() {
@@ -15,6 +20,10 @@ export function getPostSlugs() {
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
   return getBySlug(slug, fields, postsDirectory);
+}
+
+export function getProjectBySlug(slug: string, fields: string[] = []) {
+  return getBySlug(slug, fields, projectsDirectory);
 }
 
 export function getSiteBySlug(slug: string, fields: string[] = []) {
@@ -54,6 +63,15 @@ export function getAllSites(fields: string[] = []) {
   const slugs = getSiteSlugs();
   const sites = slugs.map((slug) => getSiteBySlug(slug, fields));
   return sites;
+}
+
+export function getAllProjects(fields: string[] = []) {
+  const slugs = getProjectSlugs();
+  const projects = slugs
+    .map((slug) => getProjectBySlug(slug, fields))
+    // sort posts by date in descending order
+    .sort((proj1, proj2) => (proj1.date > proj2.date ? -1 : 1));
+  return projects;
 }
 
 export function getAllPosts(fields: string[] = []) {

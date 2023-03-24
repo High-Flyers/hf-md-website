@@ -159,9 +159,9 @@ const Recruitment: NextPage<{}> = () => {
       <section>
         <MainTitle name="REKRUTACJA TRWA!" />
         <p className="font-base text-md md:text-lg text-center max-w-xl mx-auto my-4">
-          Po wybraniu interesującego cię stanowisko wypełnij formularz wybierając
-          odpowiednią rolę, a my skontaktujemy się z tobą w przeciągu kolejnych
-          dni.
+          Po wybraniu interesującego cię stanowisko wypełnij formularz
+          wybierając odpowiednią rolę, a my skontaktujemy się z tobą w przeciągu
+          kolejnych dni.
         </p>
         <button className="block px-5 py-2 mx-auto bg-my-button text-white text-xs lg:text-sm hover:bg-my-button-hover">
           <a
@@ -169,7 +169,7 @@ const Recruitment: NextPage<{}> = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            WYPEŁNI FORMULARZ!
+            WYPEŁNIJ FORMULARZ!
           </a>
         </button>
       </section>
