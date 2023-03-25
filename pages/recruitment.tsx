@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { useState } from "react";
+import BaseText from "../components/utils/base-text";
 import MainTitle from "../components/utils/main-title";
 import SectionTitle from "../components/utils/section-title";
 
@@ -220,13 +221,13 @@ const Expander = ({ data, active, setActive }: ExpanderProps) => {
     ? ["bg-my-special", "bg-my-contrast-hover", "text-my-special"]
     : ["bg-my-button", "bg-my-button-hover", "text-my-button"];
   return (
-    <div className="flex  mx-auto w-full">
+    <div className="flex mx-auto w-full">
       <div className={`w-[32px] ${contrastBar}`} />
       <div className="bg-my-dark-background p-4 w-full">
         <h3 className="font-base font-bold text-md md:text-lg mb-2">
           {data.title}
         </h3>
-        <p className="font-base text-xs md:text-md">{data.desc}</p>
+        <BaseText className="">{data.desc}</BaseText>
         {active &&
           data.list.map((l, i) => {
             return (
@@ -238,7 +239,7 @@ const Expander = ({ data, active, setActive }: ExpanderProps) => {
                   className={`list-disc text-xs md:text-md marker:${contrastText} ml-8`}
                 >
                   {l.bullets.map((b, j) => {
-                    return <li key={j}>{b} </li>;
+                    return <li key={j}><BaseText>{b}</BaseText></li>;
                   })}
                 </ul>
               </div>
