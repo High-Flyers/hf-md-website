@@ -1,15 +1,16 @@
 import disableScroll from "disable-scroll";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Footer from "./footer";
 
 type Props = {};
 
 const Header = ({}: Props) => {
   const [toggle, setToggle] = useState(false);
-  useEffect(() => {
-    if (toggle) disableScroll.on();
-    else disableScroll.off();
-  }, [toggle]);
+  // useEffect(() => {
+  //   if (toggle) disableScroll.on();
+  //   else disableScroll.off();
+  // }, [toggle]);
 
   const panels: any[] = [
     {
@@ -32,8 +33,8 @@ const Header = ({}: Props) => {
 
   return (
     <>
-      <header className="bg-my-foreground py-2 h-16 sticky top-0 z-20">
-        <div className="mx-auto h-full flex items-center px-3">
+      <header className={"flex flex-col bg-my-foreground sticky top-0 z-20 " + (toggle ? "fixed h-screen" : "")}>
+        <div className="flex flex-row items-center h-16 px-3">
           <Link href="/">
             <div
               className="flex gap-x-3 items-center hover:cursor-pointer"
@@ -67,20 +68,23 @@ const Header = ({}: Props) => {
             ))}
           </div>
         </div>
+        {toggle && (
+          <div className="flex flex-col justify-between h-1 grow overflow-scroll">
+            <div className="flex flex-col gap-y-8 sticky py-8 block w-screen bg-my-foreground z-10">
+              {panels.map((p, i) => (
+                <DescMobile
+                  link={p.link}
+                  key={i.toString()}
+                  setToggle={() => setToggle(false)}
+                >
+                  {p.children}
+                </DescMobile>
+              ))}
+            </div>
+            <Footer />
+          </div>
+        )}
       </header>
-      {toggle && (
-        <div className="flex flex-col gap-y-8 sticky pt-8 block w-screen h-footer bg-my-foreground z-10">
-          {panels.map((p, i) => (
-            <DescMobile
-              link={p.link}
-              key={i.toString()}
-              setToggle={() => setToggle(false)}
-            >
-              {p.children}
-            </DescMobile>
-          ))}
-        </div>
-      )}
     </>
   );
 };
