@@ -18,14 +18,16 @@ const AboutUs: NextPage<{}> = () => {
         <section>
           <SectionTitle name="KIM JESTEŚMY?" />
           <BaseText className="mt-4 text-center sm:text-justify">
-            W listopadzie 2010 roku, powstaliśmy jako Międzywydziałowe Koło Naukowe 
-            Bezzałogowych Obiektów Latających "High Flyers". Obecnie zrzeszamy 30 członków. 
-            Jesteśmy zespołem, który jest nastawiony na rozwój i pracę nad ciekawymi
-            rozwiązaniami w przyjemnej atmosferze pasjonatów. Naszym celem jest poszerzanie 
-            wiedzy z zakresu projektowania, budowy i eksploatacji autonomicznie sterowanych 
-            obiektów latających typu UAV (ang. Unmanned Aerial Vehicle). Skupiamy miłośników 
-            elektroniki, mechaniki, informatyki, modelarstwa lotniczego, modelowania i 
-            projektowania CAD, oraz analizy obrazów cyfrowych.
+            W listopadzie 2010 roku, powstaliśmy jako Międzywydziałowe Koło
+            Naukowe Bezzałogowych Obiektów Latających &quot;High Flyers&quot;.
+            Obecnie zrzeszamy 30 członków. Jesteśmy zespołem, który jest
+            nastawiony na rozwój i pracę nad ciekawymi rozwiązaniami w
+            przyjemnej atmosferze pasjonatów. Naszym celem jest poszerzanie
+            wiedzy z zakresu projektowania, budowy i eksploatacji autonomicznie
+            sterowanych obiektów latających typu UAV (ang. Unmanned Aerial
+            Vehicle). Skupiamy miłośników elektroniki, mechaniki, informatyki,
+            modelarstwa lotniczego, modelowania i projektowania CAD, oraz
+            analizy obrazów cyfrowych.
           </BaseText>
         </section>
         <section>
@@ -33,14 +35,36 @@ const AboutUs: NextPage<{}> = () => {
           <div className="font-base text-md mt-4">
             <BaseText>2023:</BaseText>
             <ul className="list-disc my-4 ml-8 marker:text-my-contrast">
-              <li><BaseText>Droniada, Polska, zawody krajowe - II miejsce</BaseText></li>
-              <li><BaseText>AUAV, USA, zawody międzynarodowe - III miejsce</BaseText></li>
+              <li>
+                <BaseText>
+                  Droniada, Polska, zawody krajowe - II miejsce
+                </BaseText>
+              </li>
+              <li>
+                <BaseText>
+                  AUAV, USA, zawody międzynarodowe - III miejsce
+                </BaseText>
+              </li>
             </ul>
             <BaseText>2022:</BaseText>
             <ul className="list-disc my-4 ml-8 marker:text-my-contrast">
-              <li><BaseText>Droniada, Polska, zawody krajowe - I miejsce</BaseText></li>
-              <li><BaseText>AUAV, USA, zawody międzynarodowe - I miejsce w kwalifikacjach, finaliści</BaseText></li>
-              <li><BaseText>ICUAS, Chorwacja, zawody międzynarodowe - VII miejsce w kwalifikacjach</BaseText></li>
+              <li>
+                <BaseText>
+                  Droniada, Polska, zawody krajowe - I miejsce
+                </BaseText>
+              </li>
+              <li>
+                <BaseText>
+                  AUAV, USA, zawody międzynarodowe - I miejsce w kwalifikacjach,
+                  finaliści
+                </BaseText>
+              </li>
+              <li>
+                <BaseText>
+                  ICUAS, Chorwacja, zawody międzynarodowe - VII miejsce w
+                  kwalifikacjach
+                </BaseText>
+              </li>
             </ul>
           </div>
         </section>
