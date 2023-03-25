@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
+import { useEffect, useState } from "react";
 import Sponsors from "../components/sponsors";
+import BaseText from "../components/utils/base-text";
 import SectionTitle from "../components/utils/section-title";
 import Socials from "../components/utils/socials";
 
@@ -11,48 +13,40 @@ const AboutUs: NextPage<{}> = () => {
         alt="High Flyers"
         className="object-cover object-bottom w-screen h-[300px]"
       />
-      <Socials className="max-w-[250px]"/>
-      <div className="container mx-auto px-4">
+      <Socials className="max-w-[250px]" />
+      <div className="container mx-auto px-4 flex flex-col gap-y-6">
         <section>
           <SectionTitle name="KIM JESTEŚMY?" />
-          <p className="font-base text-md mt-4">
-            High Flyers to Międzywydziałowe Studenckie Koło Naukowe, którego celem
-            jest tworzenie bezzałogowych pojazdów powietrznych oraz systemów
-            autonomicznych z ich wykorzystaniem.
-            <br />
-            <br />
-            Nasza formułka:
-            <br />
-            “W listopadzie 2010 roku, z inicjatywy studentów, pracowników
-            Politechniki Śląskiej oraz firmy Flytronic powstało Międzywydziałowe
-            Koło Naukowe Bezzałogowych Obiektów Latających High Flyers.”
-          </p>
+          <BaseText className="mt-4 text-center sm:text-justify">
+            W listopadzie 2010 roku, powstaliśmy jako Międzywydziałowe Koło Naukowe 
+            Bezzałogowych Obiektów Latających "High Flyers". Obecnie zrzeszamy 30 członków. 
+            Jesteśmy zespołem, który jest nastawiony na rozwój i pracę nad ciekawymi
+            rozwiązaniami w przyjemnej atmosferze pasjonatów. Naszym celem jest poszerzanie 
+            wiedzy z zakresu projektowania, budowy i eksploatacji autonomicznie sterowanych 
+            obiektów latających typu UAV (ang. Unmanned Aerial Vehicle). Skupiamy miłośników 
+            elektroniki, mechaniki, informatyki, modelarstwa lotniczego, modelowania i 
+            projektowania CAD, oraz analizy obrazów cyfrowych.
+          </BaseText>
         </section>
         <section>
           <SectionTitle name="OSIĄGNIĘCIA" />
           <div className="font-base text-md mt-4">
-            2023:
+            <BaseText>2023:</BaseText>
             <ul className="list-disc my-4 ml-8 marker:text-my-contrast">
-              <li>Droniada, Polska, zawody krajowe - II miejsce</li>
-              <li>AUAV, USA, zawody międzynarodowe - III miejsce</li>
+              <li><BaseText>Droniada, Polska, zawody krajowe - II miejsce</BaseText></li>
+              <li><BaseText>AUAV, USA, zawody międzynarodowe - III miejsce</BaseText></li>
             </ul>
-            2022:
+            <BaseText>2022:</BaseText>
             <ul className="list-disc my-4 ml-8 marker:text-my-contrast">
-              <li>Droniada, Polska, zawody krajowe - I miejsce</li>
-              <li>
-                AUAV, USA, zawody międzynarodowe - I miejsce w kwalifikacjach,
-                finaliści
-              </li>
-              <li>
-                ICUAS, Chorwacja, zawody międzynarodowe - VII miejsce w
-                kwalifikacjach
-              </li>
+              <li><BaseText>Droniada, Polska, zawody krajowe - I miejsce</BaseText></li>
+              <li><BaseText>AUAV, USA, zawody międzynarodowe - I miejsce w kwalifikacjach, finaliści</BaseText></li>
+              <li><BaseText>ICUAS, Chorwacja, zawody międzynarodowe - VII miejsce w kwalifikacjach</BaseText></li>
             </ul>
           </div>
         </section>
         <section>
           <SectionTitle name="SPONSORZY" />
-          <p className="font-base text-bold text-lg mt-4">
+          <p className="font-base text-bold text-lg mt-4 text-center">
             Nasze koło nie mogłoby rozwijać się bez wsparcia finansowego i
             sprzętowego naszych sponsorów.
           </p>
