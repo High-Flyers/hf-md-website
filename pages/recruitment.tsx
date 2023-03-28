@@ -166,7 +166,7 @@ const Recruitment: NextPage<{}> = () => {
         </p>
         <button className="block px-5 py-2 mx-auto bg-my-button text-white text-xs lg:text-sm hover:bg-my-button-hover">
           <a
-            href="https://www.google.pl/"
+            href="https://forms.gle/pqzLCh9vcdmWvPZX9"
             rel="noopener noreferrer"
             target="_blank"
           >
