@@ -177,8 +177,13 @@ const Recruitment: NextPage<{}> = () => {
       <div>
         <SectionTitle name="DLACZEGO MY?" />
         <ul className="list-disc mt-4 ml-6 md:ml-12 text-md md:text-lg marker:text-my-contrast">
-          <li>Dobry kontakt z firmami</li>
-          <li>Luźna atmosfera</li>
+          <li><BaseText>Ciekawe projekty</BaseText></li>
+          <li><BaseText>Dostęp do najnowszych rozwiązań technologicznych</BaseText></li>
+          <li><BaseText>Praca z profesjonalnymi narzędziami</BaseText></li>
+          <li><BaseText>Kontakt z firmami</BaseText></li>
+          <li><BaseText>Wyjazdy (po Polsce i za granicę)</BaseText></li>
+          <li><BaseText>Luźna atmosfera</BaseText></li>
+          <li><BaseText>I dużo, dużo więcej!</BaseText></li>
         </ul>
       </div>
       <div>
