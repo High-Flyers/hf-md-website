@@ -15,4 +15,13 @@ Samoloty typu VTOL (Vertical Take off and Landing) wyróżniają się zdolności
 
 Po wielu doświadczeniach zarówno z wielowirnikowcami, jak i płatowcami, postanowiliśmy wykorzystać zdobytą wiedzę do budowy samolotu typu VTOL. Nasza konstrukcja została zaprojektowana z myślą o długich misjach autonomicznych, wymagających zdolności do szybkiego badania terenu oraz przenoszenia niewielkich ładunków.
 
-Aktualnie, po wielu latach projektowania i konstrukcji, pojazd znajduje się w fazie lotów testowych i w ciągu następnych miesięcy będzie miał okazję poraz pierwszy sprawdzić się w prawdziwych zawodach.
+Aktualnie, po wielu latach projektowania i konstrukcji, pojazd znajduje się w fazie lotów testowych i w ciągu następnych miesięcy będzie miał okazję po raz pierwszy sprawdzić się w prawdziwych zawodach.
+
+### Dane techniczne
+- Masa startowa: 6kg
+- Rozpiętość skrzydeł: 2.9m
+- Wymiary ładowni: 200x150x100mm
+- Poszycie: Włókno węglowe
+- Konfiguracja napędu: Tiltrotor
+- Komputer pokładowy: Orange Cube (PX4)
+- Standardowe zasilanie: Li-Po 6s 10000mAh
