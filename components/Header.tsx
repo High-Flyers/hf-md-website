@@ -27,7 +27,7 @@ const Header = ({ }: Props) => {
     },
     {
       children: "KONTAKT",
-      link: "/sites/contact",
+      link: "/contact",
     },
   ];
 

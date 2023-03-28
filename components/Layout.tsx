@@ -1,6 +1,5 @@
-import Sponsors from "./sponsors";
 import Header from "./Header";
-import SectionTitle from "./utils/section-title";
+import Footer from "./footer";
 
 type Props = {
   children: JSX.Element;
@@ -13,6 +12,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
       <main className="flex flex-col gap-y-8 mx-auto flex-1 px-0 bg-my-background text-black">
         {children}
       </main>
+      <Footer />
     </div>
   );
 };
