@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useState } from "react";
 import BaseText from "../components/utils/base-text";
+import LinkButton from "../components/utils/link-button";
 import MainTitle from "../components/utils/main-title";
 import SectionTitle from "../components/utils/section-title";
 
@@ -164,15 +165,9 @@ const Recruitment: NextPage<{}> = () => {
           wybierając odpowiednią rolę, a my skontaktujemy się z tobą w przeciągu
           kolejnych dni.
         </p>
-        <button className="block px-5 py-2 mx-auto bg-my-button text-white text-xs lg:text-sm hover:bg-my-button-hover">
-          <a
-            href="https://forms.gle/pqzLCh9vcdmWvPZX9"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            WYPEŁNIJ FORMULARZ!
-          </a>
-        </button>
+        <LinkButton name="WYPEŁNIJ FORMULARZ!" 
+                    link="https://forms.gle/pqzLCh9vcdmWvPZX9"
+                    className="mx-auto"/>
       </section>
       <div>
         <SectionTitle name="DLACZEGO MY?" />
