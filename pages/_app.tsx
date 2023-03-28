@@ -3,7 +3,6 @@ import "tailwindcss/tailwind.css";
 import type { AppProps } from "next/app";
 import Layout from "../components/Layout";
 import Head from "next/head";
-import Footer from "../components/footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -16,7 +15,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-      <Footer />
     </div>
   );
 }
