@@ -181,7 +181,7 @@ const Recruitment: NextPage<{}> = () => {
       <section>
         <MainTitle name="REKRUTACJA TRWA!" />
         <p className="font-base text-md md:text-lg text-center max-w-xl mx-auto my-4">
-          Po wybraniu interesującego cię stanowisko wypełnij formularz
+          Po wybraniu interesującego cię stanowiska wypełnij formularz,
           wybierając odpowiednią rolę, a my skontaktujemy się z tobą w przeciągu
           kolejnych dni.
         </p>
