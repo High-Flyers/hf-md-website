@@ -32,7 +32,7 @@ const job_descriptions: ExpaderData[] = [
   },
   {
     title: "Embedded developer",
-    desc: "Lubisz grzebać w mikrokontrolerach i tworzyć rzeczywiste namacalne urządzenia? To właśnie ciebie potrzebujemy do tworzenia modułów na nasze platformy latające.",
+    desc: "Jeśli lubisz grzebać w mikrokontrolerach i tworzyć rzeczywiste namacalne urządzenia, to właśnie ciebie potrzebujemy do tworzenia modułów na nasze platformy latające.",
     list: [
       {
         title: "ROLA:",
@@ -55,7 +55,7 @@ const job_descriptions: ExpaderData[] = [
   },
   {
     title: "Konstruktor",
-    desc: "Jeśli interesuje cię modelowanie CAD, a w tym tworzenie wyspecjalizowanych systemów wielozadaniowych np. dostarczanie ładunku, autonomiczna platforma kołowa, działo na paintball, czy tworzenie całego drona, to u nas masz szansę spróbować swoich sił w ciekawych i wymagających projektach! ",
+    desc: "Jeśli interesuje cię modelowanie CAD, a w tym tworzenie wyspecjalizowanych systemów wielozadaniowych np. dostarczanie ładunku, autonomiczna platforma kołowa, działo na paintball, czy tworzenie całego drona, to u nas masz szansę spróbować swoich sił w ciekawych i wymagających projektach!",
     list: [
       {
         title: "ROLA:",
@@ -82,7 +82,7 @@ const job_descriptions: ExpaderData[] = [
     ],
   },
   {
-    title: "PR",
+    title: "Public Relation (PR)",
     desc: "Jeśli czujesz się w kontakcie z ludźmi jak ryba w wodzie lub lubisz social media, to ta działka jest dla ciebie! Tutaj możesz poznać, jak wygląda organizacja promocyjna, szukanie sponsorów oraz ogólne reklamowanie działalności.",
     list: [
       {
@@ -94,11 +94,11 @@ const job_descriptions: ExpaderData[] = [
       },
       {
         title: "DOŚWIADCZENIE",
-        bullets: ["Doświadczenie w tworzeniu grafik."],
+        bullets: ["Brak"],
       },
       {
         title: "MILE WIDZIANE:",
-        bullets: ["Znajomość Latex."],
+        bullets: ["Umiejętność tworzenia prostych grafik do postów", "Znajomość działania social mediów"],
       },
     ],
   },
@@ -129,26 +129,46 @@ const job_descriptions: ExpaderData[] = [
   },
   {
     title: "Grafik/Designer",
-    desc: "Lubisz tworzyć grafiki oraz kreować nowoczesne designy? U nas będziesz mieć możliwość tworzenia dla szerszej publiki, co na pewno będzie godne pochwalenia się w przyszłości.",
+    desc: "Jeśli lubisz tworzyć grafiki oraz kreować nowoczesne designy to właśnie u nas będziesz mieć możliwość tworzenia dla szerszej publiki, co na pewno będzie godne pochwalenia się w przyszłości.",
     list: [
       {
         title: "ROLA:",
         bullets: [
           "Tworzenie grafik sponsorskich",
           "Wzory na ubrania oraz przedmioty promocyjne",
-          "Grafiki na posty FB, Insta, oraz na stronę koła.",
+          "Grafiki na posty FB, Insta, oraz na stronę koła",
         ],
       },
       {
         title: "DOŚWIADCZENIE",
         bullets: [
-          "Tworzenie grafik na posty",
-          "Podstawowe umiejętności obsługi najbardziej znanych programów graficznych",
+          "Brak"
         ],
       },
       {
         title: "MILE WIDZIANE:",
-        bullets: ["Canva", "Figma"],
+        bullets: [
+          "Znajomość Canva lub Figma", 
+          "Podstawowe umiejętności obsługi najbardziej znanych programów graficznych",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Inna",
+    desc: "Jeśli żadna z powyższych ról nie znajduje się w obszarze twoich zainteresowań, a interesuje ciebie to co robimy i chciałbyś być częścią naszego zespołu? W takim razie również ciebie zachęcamy do zgłoszenia swojej roli na jakiej widział byś się pracując z nami!",
+    list: [
+      {
+        title: "ROLA:",
+        bullets: ["Jesteśmy ciekawi twojej propozycji :D"],
+      },
+      {
+        title: "DOŚWIADCZENIE:",
+        bullets: ["Brak"],
+      },
+      {
+        title: "MILE WIDZIANE:",
+        bullets: ["Brak"],
       },
     ],
   },
