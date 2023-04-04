@@ -15,7 +15,7 @@ const Contact: NextPage<{}> = () => {
             </BaseText>
             <BaseText className="text-bold underline text-center">highflyers.polsl@gmail.com</BaseText>
             <BaseText className="text-center">
-                W razie jakich kolwiek pytań, możecie zawsze do nas napisać 
+                W razie jakichkolwiek pytań, możecie zawsze do nas napisać 
                 w wiadomości prywatnej na naszym oficjalnym fanpagu!
             </BaseText>
             <SectionTitle name="SOCIALS" />
