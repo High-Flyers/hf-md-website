@@ -5,7 +5,7 @@ import LinkButton from "../components/utils/link-button";
 import MainTitle from "../components/utils/main-title";
 import SectionTitle from "../components/utils/section-title";
 
-const job_descriptions: ExpaderData[] = [
+const job_descriptions: ExpanderData[] = [
   {
     title: "Software programmer",
     desc: "Jeśli interesują cię algorytmy np. przetwarzania obrazu, omijania przeszkód, kontroli pojazdów lub chciałbyś je poznać i wykorzystywać w praktyce, to właśnie ciebie szukamy na to stanowisko!",
@@ -178,17 +178,7 @@ const Recruitment: NextPage<{}> = () => {
   const [opened, setOpened] = useState(-1);
   return (
     <section className="container px-4 mx-auto flex flex-col gap-y-4 py-4">
-      <section>
-        <MainTitle name="REKRUTACJA TRWA!" />
-        <p className="font-base text-md md:text-lg text-center max-w-xl mx-auto my-4">
-          Po wybraniu interesującego cię stanowiska wypełnij formularz,
-          wybierając odpowiednią rolę, a my skontaktujemy się z tobą w przeciągu
-          kolejnych dni.
-        </p>
-        <LinkButton name="WYPEŁNIJ FORMULARZ!" 
-                    link="https://forms.gle/pqzLCh9vcdmWvPZX9"
-                    className="mx-auto"/>
-      </section>
+      <RecruitmentDescription isOngoing={false}/>
       <div>
         <SectionTitle name="DLACZEGO MY?" />
         <ul className="list-disc mt-4 ml-6 md:ml-12 text-md md:text-lg marker:text-my-contrast">
@@ -221,7 +211,7 @@ const Recruitment: NextPage<{}> = () => {
   );
 };
 
-type ExpaderData = {
+type ExpanderData = {
   title: string;
   desc: string;
   list: {
@@ -231,7 +221,7 @@ type ExpaderData = {
 };
 
 type ExpanderProps = {
-  data: ExpaderData;
+  data: ExpanderData;
   active: boolean;
   setActive: () => void;
 };
@@ -277,5 +267,29 @@ const Expander = ({ data, active, setActive }: ExpanderProps) => {
     </div>
   );
 };
+
+const RecruitmentDescription = ({ isOngoing }: {isOngoing: boolean}) => {
+  return isOngoing ? (
+    <section>
+      <MainTitle name="REKRUTACJA TRWA!" />
+      <p className="font-base text-md md:text-lg text-center max-w-xl mx-auto my-4">
+        Po wybraniu interesującego cię stanowiska wypełnij formularz,
+        wybierając odpowiednią rolę, a my skontaktujemy się z tobą w przeciągu
+        kolejnych dni.
+      </p>
+      <LinkButton name="WYPEŁNIJ FORMULARZ!" 
+                  link="https://forms.gle/pqzLCh9vcdmWvPZX9"
+                  className="mx-auto"/>
+    </section>
+  ) : (
+    <section>
+      <MainTitle name="REKRUTACJA ZAKOŃCZONA!" />
+      <p className="font-base text-md md:text-lg text-center max-w-xl mx-auto my-4">
+        Dziękujemy wszystkim uczestnikom za przesłane zgłoszenia
+        i zapraszamy do udziału w przyszłych edycjach rekrutacji!
+      </p>
+    </section>
+  )
+}
 
 export default Recruitment;
