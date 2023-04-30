@@ -174,11 +174,15 @@ const job_descriptions: ExpanderData[] = [
   },
 ];
 
-const Recruitment: NextPage<{}> = () => {
+type Props = {
+  ongoing: boolean;
+};
+
+const Recruitment: NextPage<Props> = ({ ongoing }: Props) => {
   const [opened, setOpened] = useState(-1);
   return (
     <section className="container px-4 mx-auto flex flex-col gap-y-4 py-4">
-      <RecruitmentDescription isOngoing={false}/>
+      <RecruitmentDescription isOngoing={ongoing}/>
       <div>
         <SectionTitle name="DLACZEGO MY?" />
         <ul className="list-disc mt-4 ml-6 md:ml-12 text-md md:text-lg marker:text-my-contrast">
@@ -291,5 +295,12 @@ const RecruitmentDescription = ({ isOngoing }: {isOngoing: boolean}) => {
     </section>
   )
 }
+
+export function getStaticProps() {
+  const ongoing: boolean = process.env.OPEN_RECRUITMENT == '1' ? true : false;
+  return {
+    props: { ongoing }
+  };
+};
 
 export default Recruitment;
