@@ -4,6 +4,8 @@ import Sponsors from "../components/sponsors";
 import BaseText from "../components/utils/base-text";
 import SectionTitle from "../components/utils/section-title";
 import Socials from "../components/utils/socials";
+import SponsorImage from "../components/sponsor-image";
+import { PolslImage } from "../components/PolslImage";
 
 const AboutUs: NextPage<{}> = () => {
   return (
@@ -37,11 +39,6 @@ const AboutUs: NextPage<{}> = () => {
             <ul className="list-disc my-4 ml-8 marker:text-my-contrast">
               <li>
                 <BaseText>
-                  Droniada, Polska, zawody krajowe - II miejsce
-                </BaseText>
-              </li>
-              <li>
-                <BaseText>
                   AUAV, USA, zawody międzynarodowe - III miejsce
                 </BaseText>
               </li>
@@ -69,6 +66,7 @@ const AboutUs: NextPage<{}> = () => {
           </div>
         </section>
         <section>
+          <PolslImage />
           <SectionTitle name="SPONSORZY" />
           <p className="font-base text-bold text-lg mt-4 text-center">
             Nasze koło nie mogłoby rozwijać się bez wsparcia finansowego i
