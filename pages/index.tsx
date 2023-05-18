@@ -6,6 +6,7 @@ import MoreStories from "../components/more-stories";
 import LinkButton from "../components/utils/link-button";
 import SectionTitle from "../components/utils/section-title";
 import Sponsors from "../components/sponsors";
+import { PolslImage } from "../components/PolslImage";
 
 type Props = {
   posts: Post[];
@@ -17,6 +18,7 @@ const Index: NextPage<Props> = ({ posts }: Props) => {
       <Hero />
       <MoreStories posts={posts} />
       <LinkButton name="WIĘCEJ" link="/all-posts/0" className="mx-auto px-14" />
+      <PolslImage />
       <SectionTitle name="SPONSORZY" />
       <Sponsors />
     </div>

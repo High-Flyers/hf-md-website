@@ -23,10 +23,10 @@ export const Sponsors = ({}: Props) => {
           link="https://dron.edu.pl"
           small={true}
         />
-        <SponsorImage
-          src="/sponsors/polsl.png"
-          alt="PolSl"
-          link="https://www.polsl.pl"
+        <SponsorImage 
+          src="/sponsors/fiberlogy.png"
+          alt="Fiberlogy"
+          link="https://fiberlogy.com/pl/"
           small={true}
         />
         <SponsorImage
