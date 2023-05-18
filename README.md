@@ -71,6 +71,10 @@ You can do this using inspect tool in the browser. Then edit file 'components/ma
 Edit it like normal css file.
 You should use 'tailwindcss' expressions to add new features.
 
+## Environment Variables
+### `OPEN_RECRUITMENT` 
+Determines whether the recruitment page shows that recruitment is open (`OPEN_RECRUITMENT==1`).
+
 ## Deployment
 
 The easiest way is to use Vercel.
