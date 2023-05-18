@@ -47,7 +47,7 @@ const AboutUs: NextPage<{}> = () => {
             <ul className="list-disc my-4 ml-8 marker:text-my-contrast">
               <li>
                 <BaseText>
-                  Droniada, Polska, zawody krajowe - I miejsce
+                  Droniada, Polska, zawody krajowe - II miejsce, I miejsce w konkurencji sztafeta
                 </BaseText>
               </li>
               <li>
