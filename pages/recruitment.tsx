@@ -282,7 +282,7 @@ const RecruitmentDescription = ({ isOngoing }: {isOngoing: boolean}) => {
         kolejnych dni.
       </p>
       <LinkButton name="WYPEŁNIJ FORMULARZ!" 
-                  link="https://forms.gle/pqzLCh9vcdmWvPZX9"
+                  link="https://forms.gle/z7HBA1r9GXmRGLK76"
                   className="mx-auto"/>
     </section>
   ) : (
