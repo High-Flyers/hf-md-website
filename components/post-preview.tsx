@@ -16,7 +16,7 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
       <div className="w-full h-[150px] overflow-hidden sm:h-[170px] md:h-[200px]">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <img
-            src={coverImage}
+            src={coverImage || "/hero.png"}
             alt={`Cover Image for ${title}`}
             className="block h-full w-full object-cover object-center hover:scale-105 transition duration-150 hover:cursor-pointer"
           />
@@ -31,7 +31,9 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
               </Link>
             </h3>
             <div className="text-2xs md:text-xs">
-              <DateFormatter dateString={date} />
+              {date &&
+                <DateFormatter dateString={date} />
+              }
             </div>
             <p className="text-xs leading-relaxed font-saira md:text-sm">
               {excerpt}

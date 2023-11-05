@@ -15,13 +15,15 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
     <>
       <div className="mb-8 sm:mx-0">
         <img
-          src={coverImage}
+          src={coverImage || "/hero.png"}
           alt={`Cover Image for ${title}`}
           className="block h-full w-full object-cover object-center hover:scale-105 transition duration-150"
         />
       </div>
       <div className="max-w-2xl mr-auto font-base mb-2 mt-8 text-lg">
-        <DateFormatter dateString={date} />
+        {date &&
+          <DateFormatter dateString={date} />
+        }
       </div>
     </>
   );
