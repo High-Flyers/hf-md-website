@@ -6,13 +6,14 @@ type Props = {
   coverImage: string;
   excerpt: string;
   slug: string;
+  parent: string;
 };
 
-const ProjectPreview = ({ title, coverImage, excerpt, slug }: Props) => {
+const ItemPreview = ({ title, coverImage, excerpt, slug, parent }: Props) => {
   return (
     <div className="bg-my-postshow w-full h-full flex flex-col max-w-[460px] mx-auto">
       <div className="w-full h-[150px] overflow-hidden sm:h-[170px] md:h-[200px]">
-        <Link as={`/projects/${slug}`} href="/projects/[slug]">
+        <Link as={`/${parent}/${slug}`} href={`/${parent}/[slug]`}>
           <img
             src={coverImage}
             alt={`Cover Image for ${title}`}
@@ -24,7 +25,7 @@ const ProjectPreview = ({ title, coverImage, excerpt, slug }: Props) => {
         <div>
           <div className="flex flex-col gap-y-1">
             <h3 className="text-sm font-saira leading-snug md:text-lg">
-              <Link as={`/projects/${slug}`} href="/projects/[slug]">
+              <Link as={`/${parent}/${slug}`} href="/${parent}/[slug]">
                 <a className="hover:underline">{title}</a>
               </Link>
             </h3>
@@ -35,7 +36,7 @@ const ProjectPreview = ({ title, coverImage, excerpt, slug }: Props) => {
         </div>
         <LinkButton
           name="DOWIEDZ SIĘ WIĘCEJ"
-          link={`/projects/${slug}`}
+          link={`/${parent}/${slug}`}
           className="mt-3 self-start text-2xs"
         />
       </div>
@@ -43,4 +44,4 @@ const ProjectPreview = ({ title, coverImage, excerpt, slug }: Props) => {
   );
 };
 
-export default ProjectPreview;
+export default ItemPreview;

@@ -6,7 +6,7 @@ import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
 import PostBody from "../../components/post-body";
 import PostTitle from "../../components/post-title";
-import ProjectHeader from "../../components/project-header";
+import ItemHeader from "../../components/item-header";
 
 type Props = {
   post: PostType;
@@ -31,7 +31,7 @@ export default function Post({ post }: Props) {
               <title>{post.title}</title>
               <meta property="og:image" content={post.ogImage.url} />
             </Head>
-            <ProjectHeader title={post.title} coverImage={post.coverImage} />
+            <ItemHeader title={post.title} coverImage={post.coverImage} />
             <PostBody content={post.content} />
           </article>
         </>

@@ -5,7 +5,7 @@ type Props = {
   coverImage: string;
 };
 
-const ProjectHeader = ({ title, coverImage }: Props) => {
+const ItemHeader = ({ title, coverImage }: Props) => {
   return (
     <div className="mb-8 sm:mx-0">
       <img
@@ -17,4 +17,4 @@ const ProjectHeader = ({ title, coverImage }: Props) => {
   );
 };
 
-export default ProjectHeader;
+export default ItemHeader;
