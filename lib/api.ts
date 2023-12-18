@@ -98,7 +98,7 @@ export function getAllVehicles(fields: string[] = []) {
   const slugs = getVehiclesSlugs();
   const vehicles = slugs
     .map((slug) => getVehicleBySlug(slug, fields))
-    .sort((veh1, veh2) => parseInt(veh1.priority) - parseInt(veh2.priority)
+    .sort((veh1, veh2) => parseInt(veh2.priority) - parseInt(veh1.priority)
     );
   return vehicles;
 }

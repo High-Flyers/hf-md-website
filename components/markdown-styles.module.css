@@ -22,7 +22,7 @@
 }
 
 .markdown li {
-  @apply space-y-1 max-w-md list-disc list-inside;
+  @apply space-y-1 list-disc list-inside;
 }
 
 .markdown a {
