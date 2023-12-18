@@ -26,6 +26,10 @@ const Header = ({ }: Props) => {
       link: "/our_projects",
     },
     {
+      children: "HANGAR",
+      link: "/our_hangar"
+    },
+    {
       children: "KONTAKT",
       link: "/contact",
     },
