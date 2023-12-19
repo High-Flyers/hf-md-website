@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import { getProjectBySlug, getAllProjects } from "../../lib/api";
+import { getVehicleBySlug, getAllVehicles } from "../../lib/api";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
@@ -47,7 +47,7 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const post = getProjectBySlug(params.slug, [
+  const post = getVehicleBySlug(params.slug, [
     "title",
     "slug",
     "content",
@@ -67,7 +67,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllProjects(["slug"]);
+  const posts = getAllVehicles(["slug"]);
 
   return {
     paths: posts.map((post) => {

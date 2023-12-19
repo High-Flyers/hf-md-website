@@ -5,6 +5,7 @@ import matter from "gray-matter";
 const postsDirectory = join(process.cwd(), "_posts");
 const sitesDirectory = join(process.cwd(), "_sites");
 const projectsDirectory = join(process.cwd(), "_projects");
+const vehiclesDirectory = join(process.cwd(), "_vehicles");
 
 export function getSiteSlugs() {
   return fs.readdirSync(sitesDirectory);
@@ -18,6 +19,10 @@ export function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
 }
 
+export function getVehiclesSlugs() {
+  return fs.readdirSync(vehiclesDirectory);
+}
+
 export function getPostBySlug(slug: string, fields: string[] = []) {
   return getBySlug(slug, fields, postsDirectory);
 }
@@ -28,6 +33,10 @@ export function getProjectBySlug(slug: string, fields: string[] = []) {
 
 export function getSiteBySlug(slug: string, fields: string[] = []) {
   return getBySlug(slug, fields, sitesDirectory);
+}
+
+export function getVehicleBySlug(slug: string, fields: string[] = []) {
+  return getBySlug(slug, fields, vehiclesDirectory);
 }
 
 function getBySlug(slug: string, fields: string[] = [], dir: string) {
@@ -85,6 +94,14 @@ export function getAllPosts(fields: string[] = []) {
   return posts;
 }
 
+export function getAllVehicles(fields: string[] = []) {
+  const slugs = getVehiclesSlugs();
+  const vehicles = slugs
+    .map((slug) => getVehicleBySlug(slug, fields))
+    .sort((veh1, veh2) => parseInt(veh2.priority) - parseInt(veh1.priority));
+  return vehicles;
+}
+
 export function getNPosts(n: number = 2, fields: string[] = []) {
   return getAllPosts(fields).slice(0, n);
 }
@@ -97,6 +114,18 @@ export function getAtoBPosts(
   return getAllPosts(fields).slice(a, b);
 }
 
+export function getAtoBVehicles(
+  a: number = 0,
+  b: number = 8,
+  fields: string[] = []
+) {
+  return getAllVehicles(fields).slice(a, b);
+}
+
 export const getNumOfPosts = () => {
   return getPostSlugs().length;
+};
+
+export const getNumOfVehicles = () => {
+  return getVehiclesSlugs().length;
 };

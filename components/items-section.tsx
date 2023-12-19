@@ -1,23 +1,26 @@
 import SectionTitle from "./utils/section-title";
 import type Post from "../interfaces/post";
-import ProjectPreview from "./project-preview";
+import ItemPreview from "./item-preview";
 
 type Props = {
   posts: Post[];
+  title: string;
+  name: string;
 };
 
-const MoreProjects = ({ posts }: Props) => {
+const ItemsSection = ({ posts, title, name }: Props) => {
   return (
     <section>
-      <SectionTitle name="NASZE PROJEKTY" />
+      <SectionTitle name={title} />
       <div className="grid grid-cols-1 mt-8 md:pr-[10px] items-center gap-x-8 gap-y-8 md:grid-cols-2">
         {posts.map((post) => (
-          <ProjectPreview
+          <ItemPreview
             key={post.slug}
             title={post.title}
             coverImage={post.coverImage}
             slug={post.slug}
             excerpt={post.excerpt}
+            parent={name}
           />
         ))}
       </div>
@@ -25,4 +28,4 @@ const MoreProjects = ({ posts }: Props) => {
   );
 };
 
-export default MoreProjects;
+export default ItemsSection;
