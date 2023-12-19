@@ -52,6 +52,8 @@ Images should be added inside markodwn in this way:
 Images which display at the top of the post and in its short form comes from header.
 Header needs to provide a path to this image and to author image (see the example).
 
+Image size should not be greater than 1MB. In case of larger files, resizing to the width of 1200-1500px is recommended.
+
 ## Creating new site
 
 Beside creating blog posts, administrator may want to create
