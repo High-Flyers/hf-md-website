@@ -21,5 +21,5 @@ Przewidywane zastosowania obejmują misje poszukiwawcze, ratownicze, zwiadowcze 
 - Waga: 200g
 - Wymiary: 180x155x80mm
 - Zasilanie: Li-Ion 2s1p (2x18650)
-- Łączność radiowa: sterowanie 2.4Ghz, obraz 5.6Ghz
+- Łączność radiowa: sterowanie 2.4Ghz, obraz 5.8Ghz
 - Napęd: 4 silniki szczotkowe typu N20

@@ -27,7 +27,7 @@ const Header = ({ }: Props) => {
     },
     {
       children: "HANGAR",
-      link: "/our_hangar"
+      link: "/our-hangar/0"
     },
     {
       children: "KONTAKT",

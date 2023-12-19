@@ -98,8 +98,7 @@ export function getAllVehicles(fields: string[] = []) {
   const slugs = getVehiclesSlugs();
   const vehicles = slugs
     .map((slug) => getVehicleBySlug(slug, fields))
-    .sort((veh1, veh2) => parseInt(veh2.priority) - parseInt(veh1.priority)
-    );
+    .sort((veh1, veh2) => parseInt(veh2.priority) - parseInt(veh1.priority));
   return vehicles;
 }
 
@@ -115,6 +114,18 @@ export function getAtoBPosts(
   return getAllPosts(fields).slice(a, b);
 }
 
+export function getAtoBVehicles(
+  a: number = 0,
+  b: number = 8,
+  fields: string[] = []
+) {
+  return getAllVehicles(fields).slice(a, b);
+}
+
 export const getNumOfPosts = () => {
   return getPostSlugs().length;
+};
+
+export const getNumOfVehicles = () => {
+  return getVehiclesSlugs().length;
 };
